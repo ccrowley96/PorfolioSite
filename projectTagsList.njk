@@ -6,5 +6,5 @@ layout: layouts/home.njk
 
 {% for tag in collections.projectTagList %}
   {% set tagUrl %}/projectTags/{{ tag }}/{% endset %}
-  <a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a>
+  <a href="{{ tagUrl | url }}" class="tag projectTag">{{ tag }}</a>
 {% endfor %}

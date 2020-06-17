@@ -6,7 +6,7 @@ before_script:
 script: eleventy --pathprefix=""
 deploy:
   local-dir: _site
-  fqdn: portfolio.corycrowley.me
+  fqdn: corycrowley.me
   provider: pages
   skip-cleanup: true
   github-token: $GITHUB_TOKEN  # Set in travis-ci.org dashboard, marked secure

@@ -4,11 +4,37 @@ eleventyNavigation:
   key: Home
   order: 1
 ---
+<!-- Buy me a coffee -->
+<script data-name="BMC-Widget" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="corycrowley" data-description="Support me by buying me a coffee!" data-message="Support my creations by buying me a coffee : )" data-color="#5F7FFF" data-position="right" data-x_margin="18" data-y_margin="18"></script>
 
-<h2>Recent Posts</h2>
-
-{% set postslist = collections.posts | head(-3) %}
-{% set postslistCounter = collections.posts | length %}
-{% include "postslist.njk" %}
-
-<p>More posts can be found in <a href="{{ '/posts/' | url }}">my blog</a>.</p>
+<div class="jumbo">
+  <div class="jumboName">Cory Z. Crowley</div>
+  <div class="socialLinks">
+    <div class="socialLink">
+      <a href="https://github.com/ccrowley96" target="_blank">GitHub</a>    
+    </div>  
+    <div class="socialLink">
+      <a href="https://www.linkedin.com/in/crowleycoryz/" target="_blank">LinkedIn</a>    
+    </div>
+    <div class="socialLink">
+      <a href="https://twitter.com/crowlsyung" target="_blank">Twitter</a>
+    </div>
+    <div class="socialLink">
+      <a href="https://soundcloud.com/ccrowley96" target="_blank">SoundCloud</a>
+    </div>
+  </div>
+</div>
+<div class="recentTitle">Recent Blogs</div>
+<div class="recentItems">
+  {% set postslist = collections.posts | head(-3) %}
+  {% set postslistCounter = collections.posts | length %}
+  {% include "postslist.njk" %}
+  <p class="postCallout">More posts can be found in <a href="{{ '/posts/' | url }}">my blog</a>.</p>
+</div>
+<div class="recentTitle">Recent Projects</div>
+<div class="recentItems">
+  {% set projectslist = collections.projects | head(-3) %}
+  {% set projectslistCounter = collections.projects | length %}
+  {% include "projectslist.njk" %}
+  <p class="postCallout">More projects can be found in <a href="{{ '/projects/' | url }}">my projects</a>.</p>
+</div>

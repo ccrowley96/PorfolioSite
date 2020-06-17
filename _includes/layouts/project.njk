@@ -3,6 +3,7 @@ layout: layouts/base.njk
 templateClass: tmpl-project
 ---
 <h1>{{ title }}</h1>
+<h3>{{subtitle}}</h3>
 {%if externalLink%}
     <div class="externalLink"><a href="{{ externalLink | url }}" target="_blank">Live project link!</a></div>
 {% endif %}

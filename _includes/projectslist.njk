@@ -1,4 +1,4 @@
-<ol reversed class="postlist" style="counter-reset: start-from {{ (projectslist.length) + 1 }}">
+<ol reversed class="postlist" style="counter-reset: start-from {{ (projectslistCounter or projectslist.length) + 1 }}">
 {% for project in projectslist | reverse %}
   <li class="postlist-item{% if post.url == url %} postlist-item-active{% endif %}">
     <a href="{{ project.url | url }}" class="postlist-link">{% if project.data.title %}{{ project.data.title }}{% else %}<code>{{ project.url }}</code>{% endif %}</a>
@@ -7,10 +7,11 @@
       {%if tag != "projects"%}
         {%- if collections.projectTagList.indexOf(tag) != -1 -%}
           {% set tagUrl %}/projectTags/{{ tag }}/{% endset %}
-          <a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a>
+          <a href="{{ tagUrl | url }}" class="tag projectTag">{{ tag }}</a>
         {%- endif -%}
       {% endif%}
     {% endfor %}
+    <div class="projectSubtitle">{{project.data.subtitle}}</div>
   </li>
 {% endfor %}
 </ol>

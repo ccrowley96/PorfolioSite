@@ -1,3 +1,4 @@
+@import './base_styles/colors.scss';
 :root {
   --red: #C5004A;
   --darkred: #7F0036;
@@ -18,6 +19,11 @@ body {
   font-family: system-ui, sans-serif;
   color: var(--darkgray);
   background-color: var(--white);
+  max-width:1000px;
+  position: relative;
+  margin-left:auto;
+  margin-right:auto;
+  img{max-width: 100%;}
 }
 p:last-child {
   margin-bottom: 0;
@@ -25,7 +31,7 @@ p:last-child {
 p,
 .tmpl-post li,
 img {
-  max-width: 37.5em; /* 600px /16 */
+  // max-width: 37.5em; /* 600px /16 */
 }
 p,
 .tmpl-post li {
@@ -151,6 +157,12 @@ pre {
 }
 .postlist-item {
   counter-increment: start-from -1;
+  .projectSubtitle{
+    font-style: italic;
+    @media screen and(max-width: 768px) {
+      font-size:.9em;
+    }
+  }
 }
 .postlist-item:before {
   display: inline-block;
@@ -177,6 +189,9 @@ pre {
 .tmpl-home .postlist-link {
   font-size: 1.1875em; /* 19px /16 */
   font-weight: 700;
+  @media screen and(max-width: 768px) {
+    font-size:.9em;
+  }
 }
 
 
@@ -186,12 +201,18 @@ pre {
   vertical-align: text-top;
   text-transform: uppercase;
   font-size: 0.625em; /* 10px /16 */
+  @media screen and(max-width: 768px) {
+    font-size:0.3em;
+  }
   padding: 2px 4px;
   margin-left: 0.8em; /* 8px /10 */
   background-color: var(--red);
   color: var(--white);
   border-radius: 0.25em; /* 3px /12 */
   text-decoration: none;
+  &.projectTag{
+    background-color: $blue;
+  }
 }
 a[href].tag,
 a[href].tag:visited {
@@ -223,4 +244,54 @@ a[href].direct-link:focus:visited,
 :hover > a[href].direct-link,
 :hover > a[href].direct-link:visited {
   color: #aaa;
+}
+
+// Cory's Styles
+.recentTitle{
+  font-size: medium;
+  font-weight: 800;
+}
+.recentItems{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-bottom: 20px;
+  h1,h2,h3,h4,h5{
+    margin-bottom: 0px;
+  }
+  .postlist{
+    margin-bottom: 0px;
+    margin-top:0px;
+    
+    .postlist-item{
+      background-color: darken(white, 5%);
+      border-radius:5px;
+      margin-bottom:10px;
+      margin-top:10px;
+      padding:5px 5px 5px 5px;
+    }
+   
+  }
+  .postCallout{
+    margin-top: -5px;
+  }
+}
+
+.jumbo{
+  margin-bottom: 20px;
+  .jumboName{
+    text-align: center;
+    font-size: 80px;
+    @media screen and(max-width: 768px){
+      font-size:12vw;
+    }
+  }
+  .socialLinks{
+    margin-top:10px;
+    display: flex;
+    justify-content: center;
+    .socialLink{
+      padding-right:10px;
+    }
+  }
 }
