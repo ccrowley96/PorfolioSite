@@ -12,6 +12,11 @@
   </url>
   
   <url>
+    <loc>https://corycrowley.me/projects/textnet/</loc>
+    <lastmod>2019-02-19</lastmod>
+  </url>
+  
+  <url>
     <loc>https://corycrowley.me/projects/maftBot/</loc>
     <lastmod>2020-05-15</lastmod>
   </url>
@@ -47,7 +52,7 @@
   </url>
   
   <url>
-    <loc>https://corycrowley.me/projectTags/mongo/</loc>
+    <loc>https://corycrowley.me/projectTags/node/</loc>
     <lastmod>2020-06-17</lastmod>
   </url>
   
@@ -62,7 +67,7 @@
   </url>
   
   <url>
-    <loc>https://corycrowley.me/projectTags/react/</loc>
+    <loc>https://corycrowley.me/projectTags/mern/</loc>
     <lastmod>2020-06-17</lastmod>
   </url>
   
@@ -72,27 +77,22 @@
   </url>
   
   <url>
-    <loc>https://corycrowley.me/projectTags/scss/</loc>
-    <lastmod>2020-06-17</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://corycrowley.me/projectTags/node/</loc>
-    <lastmod>2020-06-17</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://corycrowley.me/projectTags/css/</loc>
-    <lastmod>2020-06-17</lastmod>
-  </url>
-  
-  <url>
     <loc>https://corycrowley.me/projectTags/reddit/</loc>
     <lastmod>2020-06-17</lastmod>
   </url>
   
   <url>
+    <loc>https://corycrowley.me/projectTags/twilio/</loc>
+    <lastmod>2020-06-17</lastmod>
+  </url>
+  
+  <url>
     <loc>https://corycrowley.me/projectTags/bot/</loc>
+    <lastmod>2020-06-17</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://corycrowley.me/projectTags/queens/</loc>
     <lastmod>2020-06-17</lastmod>
   </url>
   
@@ -112,12 +112,12 @@
   </url>
   
   <url>
-    <loc>https://corycrowley.me/blogTags/mongo/</loc>
+    <loc>https://corycrowley.me/blogTags/projects/</loc>
     <lastmod>2020-06-17</lastmod>
   </url>
   
   <url>
-    <loc>https://corycrowley.me/blogTags/projects/</loc>
+    <loc>https://corycrowley.me/blogTags/mern/</loc>
     <lastmod>2020-06-17</lastmod>
   </url>
   
@@ -127,22 +127,12 @@
   </url>
   
   <url>
-    <loc>https://corycrowley.me/blogTags/scss/</loc>
-    <lastmod>2020-06-17</lastmod>
-  </url>
-  
-  <url>
     <loc>https://corycrowley.me/blogTags/interviews/</loc>
     <lastmod>2020-06-17</lastmod>
   </url>
   
   <url>
-    <loc>https://corycrowley.me/blogTags/react/</loc>
-    <lastmod>2020-06-17</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://corycrowley.me/blogTags/reddit/</loc>
+    <loc>https://corycrowley.me/blogTags/node/</loc>
     <lastmod>2020-06-17</lastmod>
   </url>
   
@@ -152,7 +142,12 @@
   </url>
   
   <url>
-    <loc>https://corycrowley.me/blogTags/css/</loc>
+    <loc>https://corycrowley.me/blogTags/queens/</loc>
+    <lastmod>2020-06-17</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://corycrowley.me/blogTags/twilio/</loc>
     <lastmod>2020-06-17</lastmod>
   </url>
   
@@ -162,7 +157,7 @@
   </url>
   
   <url>
-    <loc>https://corycrowley.me/blogTags/node/</loc>
+    <loc>https://corycrowley.me/blogTags/reddit/</loc>
     <lastmod>2020-06-17</lastmod>
   </url>
 </urlset>
