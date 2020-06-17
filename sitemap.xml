@@ -2,62 +2,167 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://myurl.com/posts/firstpost/</loc>
-    <lastmod>2018-05-01</lastmod>
+    <loc>https://corycrowley.me/projects/qshare/</loc>
+    <lastmod>2018-03-27</lastmod>
   </url>
   
   <url>
-    <loc>https://myurl.com/posts/secondpost/</loc>
-    <lastmod>2018-07-04</lastmod>
+    <loc>https://corycrowley.me/posts/microsoft-vancouver/</loc>
+    <lastmod>2018-10-24</lastmod>
   </url>
   
   <url>
-    <loc>https://myurl.com/posts/thirdpost/</loc>
-    <lastmod>2018-08-24</lastmod>
+    <loc>https://corycrowley.me/projects/maftBot/</loc>
+    <lastmod>2020-05-15</lastmod>
   </url>
   
   <url>
-    <loc>https://myurl.com/posts/fourthpost/</loc>
-    <lastmod>2018-09-30</lastmod>
+    <loc>https://corycrowley.me/projects/grocerylist/</loc>
+    <lastmod>2020-06-03</lastmod>
   </url>
   
   <url>
-    <loc>https://myurl.com/about/</loc>
+    <loc>https://corycrowley.me/about/</loc>
     <lastmod>2020-06-17</lastmod>
   </url>
   
   <url>
-    <loc>https://myurl.com/posts/</loc>
+    <loc>https://corycrowley.me/posts/</loc>
     <lastmod>2020-06-17</lastmod>
   </url>
   
   <url>
-    <loc>https://myurl.com/</loc>
+    <loc>https://corycrowley.me/</loc>
     <lastmod>2020-06-17</lastmod>
   </url>
   
   <url>
-    <loc>https://myurl.com/page-list/</loc>
+    <loc>https://corycrowley.me/page-list/</loc>
     <lastmod>2020-06-17</lastmod>
   </url>
   
   <url>
-    <loc>https://myurl.com/tags/</loc>
+    <loc>https://corycrowley.me/projectTags/projectTagList/</loc>
     <lastmod>2020-06-17</lastmod>
   </url>
   
   <url>
-    <loc>https://myurl.com/tags/another-tag/</loc>
+    <loc>https://corycrowley.me/projectTags/mongo/</loc>
     <lastmod>2020-06-17</lastmod>
   </url>
   
   <url>
-    <loc>https://myurl.com/tags/second-tag/</loc>
+    <loc>https://corycrowley.me/projectTags/interviews/</loc>
     <lastmod>2020-06-17</lastmod>
   </url>
   
   <url>
-    <loc>https://myurl.com/tags/number-2/</loc>
+    <loc>https://corycrowley.me/projectTags/projects/</loc>
+    <lastmod>2020-06-17</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://corycrowley.me/projectTags/react/</loc>
+    <lastmod>2020-06-17</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://corycrowley.me/projectTags/javascript/</loc>
+    <lastmod>2020-06-17</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://corycrowley.me/projectTags/scss/</loc>
+    <lastmod>2020-06-17</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://corycrowley.me/projectTags/node/</loc>
+    <lastmod>2020-06-17</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://corycrowley.me/projectTags/css/</loc>
+    <lastmod>2020-06-17</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://corycrowley.me/projectTags/reddit/</loc>
+    <lastmod>2020-06-17</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://corycrowley.me/projectTags/bot/</loc>
+    <lastmod>2020-06-17</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://corycrowley.me/projectTags/</loc>
+    <lastmod>2020-06-17</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://corycrowley.me/projects/</loc>
+    <lastmod>2020-06-17</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://corycrowley.me/blogTags/</loc>
+    <lastmod>2020-06-17</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://corycrowley.me/blogTags/mongo/</loc>
+    <lastmod>2020-06-17</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://corycrowley.me/blogTags/projects/</loc>
+    <lastmod>2020-06-17</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://corycrowley.me/blogTags/javascript/</loc>
+    <lastmod>2020-06-17</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://corycrowley.me/blogTags/scss/</loc>
+    <lastmod>2020-06-17</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://corycrowley.me/blogTags/interviews/</loc>
+    <lastmod>2020-06-17</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://corycrowley.me/blogTags/react/</loc>
+    <lastmod>2020-06-17</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://corycrowley.me/blogTags/reddit/</loc>
+    <lastmod>2020-06-17</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://corycrowley.me/blogTags/bot/</loc>
+    <lastmod>2020-06-17</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://corycrowley.me/blogTags/css/</loc>
+    <lastmod>2020-06-17</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://corycrowley.me/blogTags/projectTagList/</loc>
+    <lastmod>2020-06-17</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://corycrowley.me/blogTags/node/</loc>
     <lastmod>2020-06-17</lastmod>
   </url>
 </urlset>
