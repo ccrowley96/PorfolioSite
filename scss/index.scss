@@ -247,6 +247,25 @@ a[href].direct-link:focus:visited,
 }
 
 // Cory's Styles
+// Post styling
+.tmpl-project{
+  img{
+    max-height: 100vh;
+    display: flex;
+  }
+}
+.postlist{
+  margin-bottom: 0px;
+  margin-top:0px;
+  
+  .postlist-item{
+    background-color: darken(white, 5%);
+    border-radius:5px;
+    margin-bottom:10px;
+    margin-top:10px;
+    padding:5px 5px 5px 5px;
+  }
+}
 .recentTitle{
   font-size: medium;
   font-weight: 800;
@@ -258,19 +277,6 @@ a[href].direct-link:focus:visited,
   margin-bottom: 20px;
   h1,h2,h3,h4,h5{
     margin-bottom: 0px;
-  }
-  .postlist{
-    margin-bottom: 0px;
-    margin-top:0px;
-    
-    .postlist-item{
-      background-color: darken(white, 5%);
-      border-radius:5px;
-      margin-bottom:10px;
-      margin-top:10px;
-      padding:5px 5px 5px 5px;
-    }
-   
   }
   .postCallout{
     margin-top: -5px;
