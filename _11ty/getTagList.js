@@ -1,6 +1,6 @@
-module.exports = function(collection) {
+module.exports = function(collection, tagType) {
   let tagSet = new Set();
-  collection.getAll().forEach(function(item) {
+  collection.getFilteredByTag(tagType).forEach(function(item) {
     if( "tags" in item.data ) {
       let tags = item.data.tags;
 
@@ -11,6 +11,7 @@ module.exports = function(collection) {
           case "nav":
           case "post":
           case "posts":
+          case "projects":
             return false;
         }
 

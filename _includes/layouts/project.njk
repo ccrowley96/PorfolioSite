@@ -1,0 +1,15 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-project
+---
+<h1>{{ title }}</h1>
+{%if externalLink%}
+    <div class="externalLink"><a href="{{ externalLink | url }}" target="_blank">Live project link!</a></div>
+{% endif %}
+{%if github%}
+    <div class="github-link"><a href="{{ github | url }}" target="_blank">View code on Github</a></div>
+{% endif %}
+
+{{ content | safe }}
+
+<p><a href="{{ '/projects' | url }}">← Projects</a></p>

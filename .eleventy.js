@@ -33,8 +33,9 @@ module.exports = function(eleventyConfig) {
     return array.slice(0, n);
   });
 
-  eleventyConfig.addCollection("tagList", require("./_11ty/getTagList"));
-
+  eleventyConfig.addCollection("tagList", (collection) => require("./_11ty/getTagList")(collection, 'posts'));
+  eleventyConfig.addCollection("projectTagList", (collection) => require("./_11ty/getTagList")(collection, 'projects'));
+  
   eleventyConfig.addPassthroughCopy("img");
   eleventyConfig.addPassthroughCopy("css");
 
