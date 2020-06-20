@@ -4,13 +4,20 @@ templateClass: tmpl-project
 ---
 <h1>{{ title }}</h1>
 <h3>{{subtitle}}</h3>
-{%if externalLink%}
+{% if externalLink %}
     <div class="externalLink"><a href="{{ externalLink | url }}" target="_blank">Live project link!</a></div>
 {% endif %}
-{%if github%}
+{% if github %}
     <div class="github-link"><a href="{{ github | url }}" target="_blank">View code on Github</a></div>
 {% endif %}
 
 {{ content | safe }}
 
+{% if images %}
+<div class="projectImagesContainer">
+    {%for img in images%}
+        <img class ="projectImage" src="{{img}}" />
+    {% endfor %}
+</div>
+{% endif %}
 <p><a href="{{ '/projects' | url }}">← Projects</a></p>

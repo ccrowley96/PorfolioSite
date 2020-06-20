@@ -45,7 +45,7 @@ Two of our planned team members from Queen's University couldn't make it to the 
 ## What we learned
 We learned how to use Stdlib to build a server-less API platform.  We learned how to interface SMS with the internet.  We learned *all* about async / await and modern Javascript practices.  We learned about recommendation, translate, maps, search queries, and image content analysis APIs.
 
-### Video Demo Link
-<a href="https://www.youtube.com/watch?time_continue=2&v=Rs7wDlFyZI4&feature=emb_logo
-" target="_blank"><img src="http://img.youtube.com/vi/Rs7wDlFyZI4/0.jpg" 
-alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+### Video Demo
+<div class="video-container">
+<iframe width="100%" height="100%" src="https://www.youtube.com/embed/Rs7wDlFyZI4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
