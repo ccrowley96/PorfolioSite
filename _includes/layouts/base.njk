@@ -1,6 +1,15 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132855659-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-132855659-1');
+    </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ renderData.title or title or metadata.title }}</title>
@@ -10,9 +19,10 @@
     <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
   </head>
   <body>
+  <!-- Buy me a coffee -->
+    <script data-name="BMC-Widget" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="corycrowley" data-description="Support me by buying me a coffee!" data-message="Support my creations by buying me a coffee : )" data-color="#5F7FFF" data-position="right" data-x_margin="18" data-y_margin="18"></script>
     <header>
       <h1 class="home"><a href="{{ '/' | url }}">{{ metadata.title }}</a></h1>
-
       {#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
       <ul class="nav">
       {%- for entry in collections.all | eleventyNavigation %}
