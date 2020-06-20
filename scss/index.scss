@@ -255,8 +255,8 @@ a[href].direct-link:focus:visited,
 // Post styling
 .tmpl-project{
   img{
-    max-height: 100vh;
-    display: flex;
+    // max-height: 100vh;
+    // display: flex;
   }
 }
 .postlist{
@@ -309,11 +309,22 @@ a[href].direct-link:focus:visited,
 
 // Project Image Container
 .projectImageContainer{
-  display: flex;
-  flex-wrap: wrap;
+  img{
+    max-height: 800px;
+    width:auto;
+    left: 0px;
+    right:0px;
+    margin: auto;
+  }
 }
-
 // Youtube Iframe
-.video-container { position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden; }
+.video-container { 
+  position: relative; 
+  padding-bottom: 56.25%; 
+  padding-top: 30px; 
+  height: 0; 
+  overflow: hidden; 
+  margin-bottom: 40px;
+}
 
 .video-container iframe, .video-container object, .video-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }

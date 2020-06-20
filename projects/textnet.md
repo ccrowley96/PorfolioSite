@@ -4,6 +4,7 @@ subtitle: Internet over SMS.
 date: 2019-02-19
 externalLink: https://devpost.com/software/hackprinceton-2whvgr
 github: https://github.com/chrismaltais/TextNet
+videoLink: https://www.youtube.com/embed/Rs7wDlFyZI4
 tags: 
     - javascript
     - twilio
@@ -44,8 +45,3 @@ Two of our planned team members from Queen's University couldn't make it to the 
 
 ## What we learned
 We learned how to use Stdlib to build a server-less API platform.  We learned how to interface SMS with the internet.  We learned *all* about async / await and modern Javascript practices.  We learned about recommendation, translate, maps, search queries, and image content analysis APIs.
-
-### Video Demo
-<div class="video-container">
-<iframe width="100%" height="100%" src="https://www.youtube.com/embed/Rs7wDlFyZI4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>

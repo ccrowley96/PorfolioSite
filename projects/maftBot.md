@@ -4,6 +4,11 @@ subtitle: A meme generating discord bot.
 date: 2020-05-15
 externalLink: https://discord.com/api/oauth2/authorize?client_id=708407717349425223&permissions=0&scope=bot
 github: https://github.com/ccrowley96/discord-bot
+images:
+    - /img/maft/maft3.png
+    - /img/maft/maft4.png
+    - /img/maft/maft1.png
+    - /img/maft/maft2.png
 tags: 
     - reddit
     - javascript
@@ -31,12 +36,3 @@ The memes are cached for 30 minutes on the node server.  If another meme request
 Sec, finding hot memes...
 ```
 And then fetch ~700 new memes :  )
-
-### type '$help'
-![meme bot](/img/maft/maft3.png)
-### type $stats
-![meme bot](/img/maft/maft4.png)
-### type $meme
-![meme bot](/img/maft/maft1.png)
-### type $topmeme
-![meme bot](/img/maft/maft2.png)

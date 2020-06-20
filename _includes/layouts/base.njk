@@ -17,6 +17,9 @@
     <style>{% include "css/global.css" %}</style>
     <style>{% include "css/monokai.css" %}</style>
     <link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
+    {# Super simple slider #}
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script><script src="{{'/sss/sss.min.js' | url}}"></script><link rel="stylesheet" href="{{'/sss/sss.css' | url}}" type="text/css" media="all">
+    <script>jQuery(function($) {$('.slider').sss({ slideShow : true, transition : 400, speed : 8000});;});</script>
   </head>
   <body>
   <!-- Buy me a coffee -->

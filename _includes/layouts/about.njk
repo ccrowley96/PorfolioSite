@@ -1,0 +1,17 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-post
+---
+<h1>{{ title }}</h1>
+
+{{ content | safe }}
+
+{% if images %}
+<div class="{% if images.length > 1 %} slider{% endif %} projectImageContainer">
+    {%for img in images%}
+        <img class ="projectImage" src="{{img}}" />
+    {% endfor %}
+</div>
+{% endif %}
+
+<p><a href="{{ '/posts' | url }}">← Blog</a></p>

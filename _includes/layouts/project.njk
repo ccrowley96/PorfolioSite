@@ -13,11 +13,22 @@ templateClass: tmpl-project
 
 {{ content | safe }}
 
+
+{% if videoLink %}
+<h3>Video Link</h3>
+<div class="video-container">
+    <iframe width="100%" height="100%" src="{{videoLink}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+{% endif%}
+
 {% if images %}
-<div class="projectImagesContainer">
+<div class="{% if images.length > 1 %} slider{% endif %} projectImageContainer">
     {%for img in images%}
         <img class ="projectImage" src="{{img}}" />
     {% endfor %}
 </div>
 {% endif %}
+
 <p><a href="{{ '/projects' | url }}">← Projects</a></p>
+
+

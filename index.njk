@@ -26,12 +26,12 @@ eleventyNavigation:
   {% set postslist = collections.posts | head(-3) %}
   {% set postslistCounter = collections.posts | length %}
   {% include "postslist.njk" %}
-  <p class="postCallout">More posts can be found in <a href="{{ '/posts/' | url }}">my blog</a>.</p>
+  {# <p class="postCallout">More posts can be found in <a href="{{ '/posts/' | url }}">my blog</a>.</p> #}
 </div>
 <div class="recentTitle">Recent Projects</div>
 <div class="recentItems">
   {% set projectslist = collections.projects | head(-3) %}
   {% set projectslistCounter = collections.projects | length %}
   {% include "projectslist.njk" %}
-  <p class="postCallout">More projects can be found in <a href="{{ '/projects/' | url }}">my projects</a>.</p>
+  {# <p class="postCallout">More projects can be found in <a href="{{ '/projects/' | url }}">my projects</a>.</p> #}
 </div>

@@ -1,7 +1,20 @@
 ---
-layout: layouts/post.njk
+layout: layouts/about.njk
 title: Something about me.
 templateClass: tmpl-post
+images:
+  - /img/about/cory2.jpg
+  - /img/about/cory8.jpg
+  - /img/about/cory12.jpg
+  - /img/about/cory1.jpg
+  - /img/about/cory3.jpg
+  - /img/about/cory4.jpg
+  - /img/about/cory5.jpg
+  - /img/about/cory6.jpg
+  - /img/about/cory7.jpg
+  - /img/about/cory9.jpg
+  - /img/about/cory10.jpg
+  - /img/about/cory11.jpg
 eleventyNavigation:
   key: About Me
   order: 3
