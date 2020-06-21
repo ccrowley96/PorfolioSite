@@ -161,32 +161,50 @@ pre {
   padding: 0;
 }
 .postlist-item {
+  overflow: hidden;
+  .projectHeadingWrapper{
+      display: inline-flex;
+      align-items: center;
+      flex-wrap: wrap;
+      width: 100%;
+      >*{
+        margin-bottom: 6px;
+      }
+    .projectHeading{
+      display:flex;
+      align-items: center;
+      .projectHeadingNo{
+        @media screen and(max-width: 768px) {
+          font-size:.9em;
+        }
+      }
+    }
+  }
   counter-increment: start-from -1;
   .projectSubtitle{
+    margin-top: -2px;
     font-style: italic;
     @media screen and(max-width: 768px) {
       font-size:.9em;
     }
   }
 }
-.postlist-item:before {
-  display: inline-block;
-  pointer-events: none;
-  content: "" counter(start-from, decimal-leading-zero) ". ";
-  line-height: 100%;
-  text-align: right;
-}
-.postlist-date,
-.postlist-item:before {
-  font-size: 0.8125em; /* 13px /16 */
-  color: var(--darkgray);
-}
 .postlist-date {
+  color: lighten(black, 30%);
   word-spacing: -0.5px;
+  padding-right:10px;
+  font-size: .9em;
+  @media screen and(max-width: 768px) {
+    font-size:.8em;
+  }
 }
 .postlist-link {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
   display: inline-block;
-  padding: 0.25em 0.1875em; /* 4px 3px /16 */
+  width: 100%;
+  padding: 0px 10px 0px 5px;
 }
 .postlist-item-active .postlist-link {
   font-weight: bold;
@@ -201,6 +219,9 @@ pre {
 
 
 /* Tags */
+.tagWrapper{
+  // margin-bottom: 6px;
+}
 .tag {
   display: inline-block;
   vertical-align: text-top;
@@ -210,7 +231,7 @@ pre {
     font-size:0.3em;
   }
   padding: 2px 4px;
-  margin-left: 0.8em; /* 8px /10 */
+  margin-right: 0.8em; /* 8px /10 */
   background-color: var(--red);
   color: var(--white);
   border-radius: 0.25em; /* 3px /12 */
@@ -222,6 +243,21 @@ pre {
 a[href].tag,
 a[href].tag:visited {
   color: #fff;
+}
+
+.taggedSpan{
+  display: inline-block;
+  vertical-align: text-top;
+  text-transform: uppercase;
+  padding: 2px 4px;
+  margin-right: 0.8em; /* 8px /10 */
+  background-color: var(--red);
+  color: var(--white);
+  border-radius: 0.25em; /* 3px /12 */
+  text-decoration: none;
+  &.projectTag{
+    background-color: $blue;
+  }
 }
 
 /* Warning */
@@ -271,7 +307,7 @@ a[href].direct-link:focus:visited,
     border-radius:5px;
     margin-bottom:10px;
     margin-top:10px;
-    padding:5px 5px 5px 5px;
+    padding:8px 8px 8px 8px;
   }
 }
 .recentTitle{

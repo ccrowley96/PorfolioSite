@@ -15,7 +15,7 @@ renderData:
   title: Tagged “{{ tag }}”
 permalink: /projectTags/{{ tag }}/
 ---
-<h1>Tagged “{{ tag }}” in Projects</h1>
+<h2>Tagged <span class="taggedSpan projectTag">{{ tag }}</span></h2>
 
 {% set projectslist = collections[ tag ] %}
 {% include "projectslist.njk" %}

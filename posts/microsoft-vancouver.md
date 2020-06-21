@@ -1,5 +1,5 @@
 ---
-title: Getting an Internship @ Microsoft 
+title: Getting an Internship @ Microsoft
 description: This is a post on the intern hiring process @ Microsoft
 date: 2018-10-24
 tags:

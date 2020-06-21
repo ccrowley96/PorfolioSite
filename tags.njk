@@ -15,7 +15,7 @@ renderData:
   title: Tagged “{{ tag }}”
 permalink: /blogTags/{{ tag }}/
 ---
-<h1>Tagged “{{ tag }}” in Blog Posts</h1>
+<h2>Tagged <span class="taggedSpan">{{ tag }}</span></h2>
 
 {% set postslist = collections[ tag ] %}
 {% include "postslist.njk" %}

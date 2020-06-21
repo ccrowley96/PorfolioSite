@@ -1,14 +1,23 @@
-<ol reversed class="postlist" style="counter-reset: start-from {{ (postslistCounter or postslist.length) + 1 }}">
+<ul reversed class="postlist" style="list-style-type:none;">
+{% set itemNo %}{{(postslistCounter or postslist.length)}}{% endset %}
 {% for post in postslist | reverse %}
   <li class="postlist-item{% if post.url == url %} postlist-item-active{% endif %}">
-    <a href="{{ post.url | url }}" class="postlist-link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
-    <time class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</time>
-      {% for tag in post.data.tags %}
-        {%- if collections.tagList.indexOf(tag) != -1 -%}
-        {% set tagUrl %}/blogTags/{{ tag }}/{% endset %}
-        <a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a>
-        {%- endif -%}
-      {% endfor %}
+    <div class="projectHeadingWrapper">
+      <div class="projectHeading">
+        <div class="projectHeadingNo">#{{itemNo}}</div>
+          <a href="{{ post.url | url }}" class="postlist-link">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</a>
+      </div>
+    <div class="postlist-date" datetime="{{ post.date | htmlDateString }}">{{ post.date | readableDate }}</div>
+      {%if post.data.tags.length > 0%}
+        <div class="tagWrapper">
+          {% for tag in post.data.tags %}
+            {%- if collections.tagList.indexOf(tag) != -1 -%}
+            {% set tagUrl %}/blogTags/{{ tag }}/{% endset %}
+            <a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a>
+            {%- endif -%}
+          {% endfor %}
+        <div>
+      {%endif%}
   </li>
 {% endfor %}
-</ol>
+</ul>
