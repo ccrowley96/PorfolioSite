@@ -17,7 +17,7 @@
   </url>
   
   <url>
-    <loc>https://corycrowley.me/posts/microsoft-vancouver/</loc>
+    <loc>https://corycrowley.me/posts/microsoft-interview/</loc>
     <lastmod>2018-10-24</lastmod>
   </url>
   
@@ -77,12 +77,7 @@
   </url>
   
   <url>
-    <loc>https://corycrowley.me/projectTags/microsoft/</loc>
-    <lastmod>2020-06-21</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://corycrowley.me/projectTags/interviews/</loc>
+    <loc>https://corycrowley.me/projectTags/hololens/</loc>
     <lastmod>2020-06-21</lastmod>
   </url>
   
@@ -142,7 +137,7 @@
   </url>
   
   <url>
-    <loc>https://corycrowley.me/projectTags/twilio/</loc>
+    <loc>https://corycrowley.me/projectTags/microsoft/</loc>
     <lastmod>2020-06-21</lastmod>
   </url>
   
@@ -152,12 +147,17 @@
   </url>
   
   <url>
-    <loc>https://corycrowley.me/projectTags/hololens/</loc>
+    <loc>https://corycrowley.me/projectTags/interviews/</loc>
     <lastmod>2020-06-21</lastmod>
   </url>
   
   <url>
     <loc>https://corycrowley.me/projectTags/spotify/</loc>
+    <lastmod>2020-06-21</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://corycrowley.me/projectTags/hackathon/</loc>
     <lastmod>2020-06-21</lastmod>
   </url>
   
@@ -168,6 +168,11 @@
   
   <url>
     <loc>https://corycrowley.me/projectTags/nunjucks/</loc>
+    <lastmod>2020-06-21</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://corycrowley.me/projectTags/twilio/</loc>
     <lastmod>2020-06-21</lastmod>
   </url>
   
@@ -187,17 +192,12 @@
   </url>
   
   <url>
-    <loc>https://corycrowley.me/blogTags/bot/</loc>
+    <loc>https://corycrowley.me/blogTags/microsoft/</loc>
     <lastmod>2020-06-21</lastmod>
   </url>
   
   <url>
-    <loc>https://corycrowley.me/blogTags/projects/</loc>
-    <lastmod>2020-06-21</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://corycrowley.me/blogTags/css/</loc>
+    <loc>https://corycrowley.me/blogTags/wordpress/</loc>
     <lastmod>2020-06-21</lastmod>
   </url>
   
@@ -227,7 +227,7 @@
   </url>
   
   <url>
-    <loc>https://corycrowley.me/blogTags/interviews/</loc>
+    <loc>https://corycrowley.me/blogTags/reddit/</loc>
     <lastmod>2020-06-21</lastmod>
   </url>
   
@@ -237,12 +237,12 @@
   </url>
   
   <url>
-    <loc>https://corycrowley.me/blogTags/wordpress/</loc>
+    <loc>https://corycrowley.me/blogTags/projects/</loc>
     <lastmod>2020-06-21</lastmod>
   </url>
   
   <url>
-    <loc>https://corycrowley.me/blogTags/microsoft/</loc>
+    <loc>https://corycrowley.me/blogTags/css/</loc>
     <lastmod>2020-06-21</lastmod>
   </url>
   
@@ -262,6 +262,11 @@
   </url>
   
   <url>
+    <loc>https://corycrowley.me/blogTags/hackathon/</loc>
+    <lastmod>2020-06-21</lastmod>
+  </url>
+  
+  <url>
     <loc>https://corycrowley.me/blogTags/11ty/</loc>
     <lastmod>2020-06-21</lastmod>
   </url>
@@ -277,12 +282,17 @@
   </url>
   
   <url>
+    <loc>https://corycrowley.me/blogTags/interviews/</loc>
+    <lastmod>2020-06-21</lastmod>
+  </url>
+  
+  <url>
     <loc>https://corycrowley.me/blogTags/projectTagList/</loc>
     <lastmod>2020-06-21</lastmod>
   </url>
   
   <url>
-    <loc>https://corycrowley.me/blogTags/reddit/</loc>
+    <loc>https://corycrowley.me/blogTags/bot/</loc>
     <lastmod>2020-06-21</lastmod>
   </url>
 </urlset>
