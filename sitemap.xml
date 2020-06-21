@@ -47,6 +47,11 @@
   </url>
   
   <url>
+    <loc>https://corycrowley.me/projects/porfoliosite/</loc>
+    <lastmod>2020-06-20</lastmod>
+  </url>
+  
+  <url>
     <loc>https://corycrowley.me/about/</loc>
     <lastmod>2020-06-21</lastmod>
   </url>
@@ -102,12 +107,22 @@
   </url>
   
   <url>
+    <loc>https://corycrowley.me/projectTags/queens/</loc>
+    <lastmod>2020-06-21</lastmod>
+  </url>
+  
+  <url>
     <loc>https://corycrowley.me/projectTags/mern/</loc>
     <lastmod>2020-06-21</lastmod>
   </url>
   
   <url>
     <loc>https://corycrowley.me/projectTags/javascript/</loc>
+    <lastmod>2020-06-21</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://corycrowley.me/projectTags/scss/</loc>
     <lastmod>2020-06-21</lastmod>
   </url>
   
@@ -147,7 +162,12 @@
   </url>
   
   <url>
-    <loc>https://corycrowley.me/projectTags/queens/</loc>
+    <loc>https://corycrowley.me/projectTags/11ty/</loc>
+    <lastmod>2020-06-21</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://corycrowley.me/projectTags/nunjucks/</loc>
     <lastmod>2020-06-21</lastmod>
   </url>
   
@@ -187,6 +207,11 @@
   </url>
   
   <url>
+    <loc>https://corycrowley.me/blogTags/queens/</loc>
+    <lastmod>2020-06-21</lastmod>
+  </url>
+  
+  <url>
     <loc>https://corycrowley.me/blogTags/mern/</loc>
     <lastmod>2020-06-21</lastmod>
   </url>
@@ -197,12 +222,17 @@
   </url>
   
   <url>
-    <loc>https://corycrowley.me/blogTags/reddit/</loc>
+    <loc>https://corycrowley.me/blogTags/scss/</loc>
     <lastmod>2020-06-21</lastmod>
   </url>
   
   <url>
     <loc>https://corycrowley.me/blogTags/interviews/</loc>
+    <lastmod>2020-06-21</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://corycrowley.me/blogTags/node/</loc>
     <lastmod>2020-06-21</lastmod>
   </url>
   
@@ -232,7 +262,12 @@
   </url>
   
   <url>
-    <loc>https://corycrowley.me/blogTags/queens/</loc>
+    <loc>https://corycrowley.me/blogTags/11ty/</loc>
+    <lastmod>2020-06-21</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://corycrowley.me/blogTags/nunjucks/</loc>
     <lastmod>2020-06-21</lastmod>
   </url>
   
@@ -247,7 +282,7 @@
   </url>
   
   <url>
-    <loc>https://corycrowley.me/blogTags/node/</loc>
+    <loc>https://corycrowley.me/blogTags/reddit/</loc>
     <lastmod>2020-06-21</lastmod>
   </url>
 </urlset>
