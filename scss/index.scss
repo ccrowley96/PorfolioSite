@@ -51,9 +51,6 @@ a[href]:visited {
 main {
   padding: 1rem;
 }
-main :first-child {
-  margin-top: 0;
-}
 header {
   border-bottom: 1px dashed var(--lightgray);
 }
@@ -219,9 +216,6 @@ pre {
 
 
 /* Tags */
-.tagWrapper{
-  // margin-bottom: 6px;
-}
 .tag {
   display: inline-block;
   vertical-align: text-top;
@@ -257,6 +251,21 @@ a[href].tag:visited {
   text-decoration: none;
   &.projectTag{
     background-color: $blue;
+  }
+}
+
+.allTagWrapper{
+  display: flex;
+  flex-wrap: wrap;
+  font-size: xx-large;
+  >*{
+    margin: 5px;
+  }
+  @media screen and (max-width: 768px){
+      .tag{
+        font-size: initial;
+      }
+      font-size: x-large;
   }
 }
 
