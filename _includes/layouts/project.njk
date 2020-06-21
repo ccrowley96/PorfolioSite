@@ -2,17 +2,39 @@
 layout: layouts/base.njk
 templateClass: tmpl-project
 ---
-<h1>{{ title }}</h1>
-<h3>{{subtitle}}</h3>
-{% if externalLink %}
-    <div class="externalLink"><a href="{{ externalLink | url }}" target="_blank">Live project link!</a></div>
-{% endif %}
-{% if github %}
-    <div class="github-link"><a href="{{ github | url }}" target="_blank">View code on Github</a></div>
-{% endif %}
+<h1 class="projectTitle">{{ title }}</h1>
+<h3 class="projectSubtitle">{{subtitle}}</h3>
+{%if tags.length > 0%}
+    <div class="portfolioTagsWrapper">
+    <span>
+        <h4 class="tagHeader">Tags:</h4>
+        {% for tag in tags %}
+            {%if tag != "projects"%}
+                {%- if collections.projectTagList.indexOf(tag) != -1 -%}
+                {% set tagUrl %}/projectTags/{{ tag }}/{% endset %}
+                <a href="{{ tagUrl | url }}" class="tag projectTag">{{ tag }}</a>
+                {%- endif -%}
+            {% endif%}
+        {% endfor %}
+        </span>
+    </div>
+{%endif%}
+<div class="projectLinkWrapper">
+    {% if externalLink %}
+            <a class="projectLink" href="{{ externalLink | url }}" target="_blank">
+                <div class="projectLinkIcon">{% include "icons/link.svg"%}</div>
+                <div>Live project link!</div>
+            </a>
+    {% endif %}
+    {% if github %}
+        <a class="projectLink" href="{{ github | url }}" target="_blank">
+            <div class="projectLinkIcon">{% include "icons/github.svg"%}</div>
+            <div>View code on Github</div>
+        </a>
+    {% endif %}
+</div>
 
 {{ content | safe }}
-
 
 {% if videoLink %}
 <h3>Video Link</h3>

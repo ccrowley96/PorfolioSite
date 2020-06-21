@@ -254,9 +254,12 @@ a[href].direct-link:focus:visited,
 // Cory's Styles
 // Post styling
 .tmpl-project{
-  img{
-    // max-height: 100vh;
-    // display: flex;
+  .projectTitle{
+    margin-bottom: 0px;
+  }
+  .projectSubtitle{
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
 }
 .postlist{
@@ -347,6 +350,34 @@ a[href].direct-link:focus:visited,
         svg{
           fill: $linkedin;
         }
+      }
+    }
+  }
+}
+
+.portfolioTagsWrapper{
+  margin-bottom: 15px;
+  .tagHeader{
+    display:inline;
+  }
+  a{
+    margin-top: 3px;
+  }
+}
+.projectLinkWrapper{
+  display:flex;
+  flex-wrap: wrap;
+  .projectLink{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: max-content;
+    padding-right: 20px;
+    .projectLinkIcon{
+      padding-right:10px;
+      svg{
+      width: 30px;
+      height: auto;
       }
     }
   }

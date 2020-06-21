@@ -11,6 +11,7 @@ images:
 tags: 
     - mern
     - javascript
+    - scss
 ---
 I wanted to make it easier for quarantined family and friends to make group shopping lists. GroceryList is an alternative to paper lists and last minute "can you also get" texts. (It also categorizes groceries by department, making shopping even easier)
 
