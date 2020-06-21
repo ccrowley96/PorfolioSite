@@ -296,10 +296,15 @@ a[href].direct-link:focus:visited,
 .jumbo{
   margin-bottom: 20px;
   .jumboName{
+    height: 134px;
+    font-family: 'Indie Flower', cursive;
     text-align: center;
     font-size: 80px;
     @media screen and(max-width: 768px){
       font-size:12vw;
+    }
+    @media screen and(max-width: 425px){
+      height: 75px;
     }
   }
   .socialLinks{
