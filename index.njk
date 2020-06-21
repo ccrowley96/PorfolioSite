@@ -37,3 +37,18 @@ eleventyNavigation:
   {% include "projectslist.njk" %}
   {# <p class="postCallout">More projects can be found in <a href="{{ '/projects/' | url }}">my projects</a>.</p> #}
 </div>
+
+<!-- Type JS -->
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+    var options = {
+        strings: ["Cory Z. Crowley"
+                 ],
+        typeSpeed:150,
+        showCursor: false,
+    }
+    
+    var typed = new Typed("#jumbo_name", options);
+});
+</script>
