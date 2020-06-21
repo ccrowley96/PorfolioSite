@@ -11,9 +11,9 @@
       {%if post.data.tags.length > 0%}
         <div class="tagWrapper">
           {% for tag in post.data.tags %}
-            {%- if collections.tagList.indexOf(tag) != -1 -%}
+            {%- if ['projects', 'posts'].indexOf(tag) == -1 -%}
             {% set tagUrl %}/tagged/{{ tag }}/{% endset %}
-            <a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a>
+            <a href="{{ tagUrl | url }}" class="tag {%if post.data.type == 'project'%}projectTag{%endif%}">{{ tag }}</a>
             {%- endif -%}
           {% endfor %}
         <div>

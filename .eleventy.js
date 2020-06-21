@@ -33,9 +33,11 @@ module.exports = function(eleventyConfig) {
     return array.slice(0, n);
   });
 
-  eleventyConfig.addCollection("tagList", (collection) => require("./_11ty/getTagList")(collection, 'posts'));
-  eleventyConfig.addCollection("projectTagList", (collection) => require("./_11ty/getTagList")(collection, 'projects'));
+  eleventyConfig.addCollection("tagList", (collection) => require("./_11ty/getTagList")(collection, ['posts']));
+  eleventyConfig.addCollection("projectTagList", (collection) => require("./_11ty/getTagList")(collection, ['projects']));
+  eleventyConfig.addCollection("allTagsList", (collection) => require("./_11ty/getTagList")(collection, ['projects', 'posts']));
   
+
   eleventyConfig.addPassthroughCopy("img");
   eleventyConfig.addPassthroughCopy("css");
   eleventyConfig.addPassthroughCopy("sss");

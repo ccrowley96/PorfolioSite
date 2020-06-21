@@ -13,7 +13,7 @@
         {% for tag in project.data.tags %}
           {%if tag != "projects"%}
             {%- if collections.projectTagList.indexOf(tag) != -1 -%}
-              {% set tagUrl %}/projectTags/{{ tag }}/{% endset %}
+              {% set tagUrl %}/tagged/{{ tag }}/{% endset %}
               <a href="{{ tagUrl | url }}" class="tag projectTag">{{ tag }}</a>
             {%- endif -%}
           {% endif%}

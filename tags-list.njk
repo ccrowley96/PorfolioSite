@@ -1,12 +1,12 @@
 ---
-permalink: /blogTags/
+permalink: /allTags/
 layout: layouts/home.njk
 ---
-<h1>Tags</h1>
+<h1>All Tags</h1>
 
 <div class="allTagWrapper">
-  {% for tag in collections.tagList %}
-    {% set tagUrl %}/blogTags/{{ tag }}/{% endset %}
-    <a href="{{ tagUrl | url }}" class="tag allTagWrapper">{{ tag }}</a>
+  {% for tag in collections.allTagsList | sort%}
+    {% set tagUrl %}/tagged/{{ tag }}/{% endset %}
+    <a href="{{ tagUrl | url }}" class="tag allTagItem">{{ tag }}</a>
   {% endfor %}
 <div>

@@ -245,13 +245,10 @@ a[href].tag:visited {
   text-transform: uppercase;
   padding: 2px 4px;
   margin-right: 0.8em; /* 8px /10 */
-  background-color: var(--red);
+  background-color: black;
   color: var(--white);
   border-radius: 0.25em; /* 3px /12 */
   text-decoration: none;
-  &.projectTag{
-    background-color: $blue;
-  }
 }
 
 .allTagWrapper{
@@ -266,6 +263,9 @@ a[href].tag:visited {
         font-size: initial;
       }
       font-size: x-large;
+  }
+  .allTagItem{
+    background-color: black;
   }
 }
 
@@ -298,15 +298,17 @@ a[href].direct-link:focus:visited,
 
 // Cory's Styles
 // Post styling
-.tmpl-project{
-  .projectTitle{
-    margin-bottom: 0px;
-  }
-  .projectSubtitle{
-    margin-top: 5px;
-    margin-bottom: 5px;
-  }
+.postTitle{
+  margin-bottom: 0px;
 }
+.postSubtitle{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.dateHeader{
+  display: inline;
+}
+
 .postlist{
   margin-bottom: 0px;
   margin-top:0px;
@@ -400,7 +402,8 @@ a[href].direct-link:focus:visited,
   }
 }
 
-.portfolioTagsWrapper{
+.postTagsWrapper{
+  margin-top: 5px;
   margin-bottom: 15px;
   .tagHeader{
     display:inline;

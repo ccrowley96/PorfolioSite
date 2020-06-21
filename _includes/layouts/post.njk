@@ -2,7 +2,24 @@
 layout: layouts/base.njk
 templateClass: tmpl-post
 ---
-<h1>{{ title }}</h1>
+<h1 class="postTitle">{{ title }}</h1>
+<h3 class="postSubtitle">{{subtitle}}</h3>
+<span><h4 class="dateHeader">Date:</h4> {{date | readableDate}}</span>
+{%if tags.length > 0%}
+    <div class="postTagsWrapper">
+    <span>
+        <h4 class="tagHeader">Tags:</h4>
+        {% for tag in tags %}
+            {%if tag != "posts"%}
+                {%- if collections.tagList.indexOf(tag) != -1 -%}
+                {% set tagUrl %}/tagged/{{ tag }}/{% endset %}
+                <a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a>
+                {%- endif -%}
+            {% endif%}
+        {% endfor %}
+        </span>
+    </div>
+{%endif%}
 
 {{ content | safe }}
 

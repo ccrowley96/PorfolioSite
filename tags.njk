@@ -13,11 +13,11 @@ pagination:
 layout: layouts/home.njk
 renderData:
   title: Tagged “{{ tag }}”
-permalink: /blogTags/{{ tag }}/
+permalink: /tagged/{{ tag }}/
 ---
 <h2>Tagged <span class="taggedSpan">{{ tag }}</span></h2>
 
 {% set postslist = collections[ tag ] %}
-{% include "postslist.njk" %}
+{% include "mixedlist.njk" %}
 
-<p>See <a href="{{ '/blogTags/' | url }}">all blog tags</a>.</p>
+<p>See <a href="{{ '/allTags/' | url }}">all tags</a>.</p>

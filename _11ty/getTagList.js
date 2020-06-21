@@ -1,8 +1,14 @@
-module.exports = function(collection, tagType) {
+module.exports = function(collection, tagTypes) {
   let tagSet = new Set();
-  collection.getFilteredByTag(tagType).forEach(function(item) {
+  let targetCollection = [];
+  for (tag of tagTypes){
+    targetCollection.push(...collection.getFilteredByTag(tag));
+  }
+  targetCollection.forEach(function(item) {
+    
     if( "tags" in item.data ) {
       let tags = item.data.tags;
+      console.log(tags);
 
       tags = tags.filter(function(item) {
         switch(item) {

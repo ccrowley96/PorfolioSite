@@ -1,6 +1,6 @@
 ---
 title: Interviewing @ Microsoft
-description: This is a post on the intern hiring process @ Microsoft
+subtitle: My experience interviewing at Microsoft
 date: 2018-10-24
 images:
   - /img/ms_square.jpg
@@ -9,6 +9,7 @@ images:
   - /img/office.jpg
 tags:
   - interviews
+  - microsoft
 layout: layouts/post.njk
 ---
 > *Holy hot damn salami. I had ten days before the biggest interview in my life.*

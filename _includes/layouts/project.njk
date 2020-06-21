@@ -2,16 +2,17 @@
 layout: layouts/base.njk
 templateClass: tmpl-project
 ---
-<h1 class="projectTitle">{{ title }}</h1>
-<h3 class="projectSubtitle">{{subtitle}}</h3>
+<h1 class="postTitle">{{ title }}</h1>
+<h3 class="postSubtitle">{{subtitle}}</h3>
+<span><h4 class="dateHeader">Date:</h4> {{date | readableDate}}</span>
 {%if tags.length > 0%}
-    <div class="portfolioTagsWrapper">
+    <div class="postTagsWrapper">
     <span>
         <h4 class="tagHeader">Tags:</h4>
         {% for tag in tags %}
             {%if tag != "projects"%}
                 {%- if collections.projectTagList.indexOf(tag) != -1 -%}
-                {% set tagUrl %}/projectTags/{{ tag }}/{% endset %}
+                {% set tagUrl %}/tagged/{{ tag }}/{% endset %}
                 <a href="{{ tagUrl | url }}" class="tag projectTag">{{ tag }}</a>
                 {%- endif -%}
             {% endif%}
