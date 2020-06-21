@@ -9,6 +9,10 @@ images:
     - /img/microsoftgarage/bc_cancer_fund.jpg
     - /img/microsoftgarage/badge.jpg
     - /img/microsoftgarage/sleep.jpg
+    - /img/microsoftgarage/microsoftgarage1.jpg
+    - /img/microsoftgarage/microsoftgarage2.jpg
+    - /img/microsoftgarage/microsoftgarage3.jpg
+    - /img/microsoftgarage/microsoftgarage4.jpg
 tags: 
     - microsoft
     - unity

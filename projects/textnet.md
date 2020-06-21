@@ -9,6 +9,7 @@ tags:
     - javascript
     - twilio
     - queens
+    - hackathon
 ---
 Winner of **Audience Choice**, **Best Design**, **Best Use of Standard Library**, **Second Overall** @ Hack Princeton 2018.  After it's success at Hack Princeton, I turned TextNet into my fourth year engineering capstone project @ Queen's Uni.
 

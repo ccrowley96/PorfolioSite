@@ -14,6 +14,7 @@ tags:
     - javascript
     - spotify
     - queens
+    - hackathon
 ---
 ## What it does
 MusiCrowd is an interactive democratic music streaming service that allows individuals to vote on what songs they want to play next (i.e. if three people added three different songs to the queue the song at the top of the queue will be the song with the most upvotes). This system was built with the intentions of allowing entertainment venues (pubs, restaurants, socials, etc.) to be inclusive allowing everyone to interact with the entertainment portion of the venue. 

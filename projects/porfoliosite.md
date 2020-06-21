@@ -24,7 +24,7 @@ After setting up the base template, I extended it, adding a 'portfolio' section 
 
 *One of the great things about modern web development is the ability to create complex systems in days rather than months or years. Building on top of the frameworks and libraries created by others allows for this type of rapid learning and development.*
 
-Here's an example of how this process works.  To create this project post, I created a `microsoftgarage.md` file with the markdown shown below.
+Here's an example of how this process works.  To create a project post, I created a `microsoftgarage.md` file with the markdown shown below.
 
 ### `microsoftgarage.md`
 ```yaml
