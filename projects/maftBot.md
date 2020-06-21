@@ -26,7 +26,7 @@ $meme
 ```
 
 **$topmeme**
-When a user types $topmeme [hour | day | week | month | year | all], the bot srapes the 100 top memes of [timeframe] defaulted to all time if no timeframe is given.
+When a user types $topmeme [hour | day | week | month | year | all], the bot scrapes the 100 top memes of [time-frame] defaulted to all time if no time-frame is given.
 ```text/2-3
 $topmeme
 ```
