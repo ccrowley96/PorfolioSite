@@ -7,19 +7,21 @@ eleventyNavigation:
 <div class="jumbo">
   <div class="jumboName">Cory Z. Crowley</div>
   <div class="socialLinks">
-    <div class="socialLink">
-      <a href="https://github.com/ccrowley96" target="_blank">GitHub</a>    
+    <div class="socialLink github">
+      {# <a href="https://github.com/ccrowley96" target="_blank"><img src="/img/icons/github.svg" /></a>    #}
+      <a href="https://github.com/ccrowley96" target="_blank">{% include "icons/github.svg"%}</a> 
     </div>  
-    <div class="socialLink">
-      <a href="https://www.linkedin.com/in/crowleycoryz/" target="_blank">LinkedIn</a>    
+    <div class="socialLink linkedin">
+      <a href="https://www.linkedin.com/in/crowleycoryz/" target="_blank">{% include "icons/linkedin.svg"%}</a>    
     </div>
-    <div class="socialLink">
-      <a href="https://twitter.com/crowlsyung" target="_blank">Twitter</a>
+    <div class="socialLink twitter">
+      <a href="https://twitter.com/crowlsyung" target="_blank">{% include "icons/twitter.svg"%}</a>
     </div>
-    <div class="socialLink">
-      <a href="https://soundcloud.com/ccrowley96" target="_blank">SoundCloud</a>
+    <div class="socialLink soundcloud">
+      <a href="https://soundcloud.com/ccrowley96" target="_blank">{% include "icons/soundcloud.svg"%}</a>
     </div>
   </div>
+  
 </div>
 <div class="recentTitle">Recent Blogs</div>
 <div class="recentItems">

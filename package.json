@@ -8,7 +8,8 @@
     "serve": "eleventy --serve",
     "debug": "DEBUG=* eleventy",
     "sass:process": "sass scss/index.scss:_includes/css/global.css scss/prism-base16-monokai.dark.scss:_includes/css/monokai.css --style=compressed",
-    "prestart": "rm -rf _site/",
+    "icon:process": "cp img/icons/* _includes/icons",
+    "prestart": "rm -rf _site/ && npm run icon:process",
     "start": "concurrently \"npm run sass:process -- --watch\" \"eleventy --serve\""
   },
   "repository": {

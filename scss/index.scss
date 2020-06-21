@@ -288,6 +288,11 @@ a[href].direct-link:focus:visited,
   }
 }
 
+@keyframes wobble {
+  33% { transform: rotate(-5deg); }
+  66% { transform: rotate(5deg); }
+}
+
 .jumbo{
   margin-bottom: 20px;
   .jumboName{
@@ -302,7 +307,42 @@ a[href].direct-link:focus:visited,
     display: flex;
     justify-content: center;
     .socialLink{
-      padding-right:10px;
+      padding-right:20px;
+
+      svg{
+        width:40px;
+        height:auto;
+        &:hover{
+          animation: wobble 0.4s;
+        }
+      }
+
+      @media screen and (max-width: 425px){
+        svg{
+          width:32px;
+        }
+      }
+
+      &.twitter{
+        svg{
+          fill: $twitter;
+        }
+      }
+      &.soundcloud{
+        svg{
+          fill: $soundcloud;
+        }
+      }
+      &.github{
+        svg{
+          fill: $github;
+        }
+      }
+      &.linkedin{
+        svg{
+          fill: $linkedin;
+        }
+      }
     }
   }
 }
