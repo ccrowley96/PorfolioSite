@@ -19,7 +19,7 @@ tags:
 Developed a mixed-reality cancer tumor data visualizer and companion web app for Microsoft HoloLens in partnership with BC Cancer. Worked on filter, zoom / pan / rotate hand gestures, clipping box, save / load, annotation, cell labelling, voice control, cloud sync, and web application development.
 
 ## Responsibity 
-Led a team of five developers and one designer as the SCRUM champion. Worked closely with PM, coaches, and external stakeholders to plan sprint tasks, design the product roadmap, and deliver on requirements. Presented the visualizer to the President of Microsoft and BC Cancer.
+Led a team of five developers and one designer as the SCRUM champion. Worked closely with PM, coaches, and external stakeholders to plan sprint tasks, design the product road map, and deliver on requirements. Presented the visualizer to the President of Microsoft and BC Cancer.
 
 ## Tech Stack 
 Unity, C#, Python, networking, vector math, graphics, WebGL development, HoloLens
