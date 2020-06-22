@@ -53,246 +53,141 @@
   
   <url>
     <loc>https://corycrowley.me/about/</loc>
-    <lastmod>2020-06-21</lastmod>
+    <lastmod>2020-06-22</lastmod>
   </url>
   
   <url>
     <loc>https://corycrowley.me/posts/</loc>
-    <lastmod>2020-06-21</lastmod>
+    <lastmod>2020-06-22</lastmod>
   </url>
   
   <url>
     <loc>https://corycrowley.me/</loc>
-    <lastmod>2020-06-21</lastmod>
+    <lastmod>2020-06-22</lastmod>
   </url>
   
   <url>
     <loc>https://corycrowley.me/page-list/</loc>
-    <lastmod>2020-06-21</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://corycrowley.me/projectTags/projectTagList/</loc>
-    <lastmod>2020-06-21</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://corycrowley.me/projectTags/hololens/</loc>
-    <lastmod>2020-06-21</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://corycrowley.me/projectTags/projects/</loc>
-    <lastmod>2020-06-21</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://corycrowley.me/projectTags/wordpress/</loc>
-    <lastmod>2020-06-21</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://corycrowley.me/projectTags/css/</loc>
-    <lastmod>2020-06-21</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://corycrowley.me/projectTags/cms/</loc>
-    <lastmod>2020-06-21</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://corycrowley.me/projectTags/queens/</loc>
-    <lastmod>2020-06-21</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://corycrowley.me/projectTags/mern/</loc>
-    <lastmod>2020-06-21</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://corycrowley.me/projectTags/javascript/</loc>
-    <lastmod>2020-06-21</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://corycrowley.me/projectTags/scss/</loc>
-    <lastmod>2020-06-21</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://corycrowley.me/projectTags/reddit/</loc>
-    <lastmod>2020-06-21</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://corycrowley.me/projectTags/node/</loc>
-    <lastmod>2020-06-21</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://corycrowley.me/projectTags/bot/</loc>
-    <lastmod>2020-06-21</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://corycrowley.me/projectTags/microsoft/</loc>
-    <lastmod>2020-06-21</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://corycrowley.me/projectTags/unity/</loc>
-    <lastmod>2020-06-21</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://corycrowley.me/projectTags/interviews/</loc>
-    <lastmod>2020-06-21</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://corycrowley.me/projectTags/spotify/</loc>
-    <lastmod>2020-06-21</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://corycrowley.me/projectTags/hackathon/</loc>
-    <lastmod>2020-06-21</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://corycrowley.me/projectTags/11ty/</loc>
-    <lastmod>2020-06-21</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://corycrowley.me/projectTags/nunjucks/</loc>
-    <lastmod>2020-06-21</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://corycrowley.me/projectTags/twilio/</loc>
-    <lastmod>2020-06-21</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://corycrowley.me/projectTags/</loc>
-    <lastmod>2020-06-21</lastmod>
+    <lastmod>2020-06-22</lastmod>
   </url>
   
   <url>
     <loc>https://corycrowley.me/projects/</loc>
-    <lastmod>2020-06-21</lastmod>
+    <lastmod>2020-06-22</lastmod>
   </url>
   
   <url>
-    <loc>https://corycrowley.me/blogTags/</loc>
-    <lastmod>2020-06-21</lastmod>
+    <loc>https://corycrowley.me/allTags/</loc>
+    <lastmod>2020-06-22</lastmod>
   </url>
   
   <url>
-    <loc>https://corycrowley.me/blogTags/microsoft/</loc>
-    <lastmod>2020-06-21</lastmod>
+    <loc>https://corycrowley.me/tagged/wordpress/</loc>
+    <lastmod>2020-06-22</lastmod>
   </url>
   
   <url>
-    <loc>https://corycrowley.me/blogTags/wordpress/</loc>
-    <lastmod>2020-06-21</lastmod>
+    <loc>https://corycrowley.me/tagged/css/</loc>
+    <lastmod>2020-06-22</lastmod>
   </url>
   
   <url>
-    <loc>https://corycrowley.me/blogTags/cms/</loc>
-    <lastmod>2020-06-21</lastmod>
+    <loc>https://corycrowley.me/tagged/cms/</loc>
+    <lastmod>2020-06-22</lastmod>
   </url>
   
   <url>
-    <loc>https://corycrowley.me/blogTags/queens/</loc>
-    <lastmod>2020-06-21</lastmod>
+    <loc>https://corycrowley.me/tagged/queens/</loc>
+    <lastmod>2020-06-22</lastmod>
   </url>
   
   <url>
-    <loc>https://corycrowley.me/blogTags/mern/</loc>
-    <lastmod>2020-06-21</lastmod>
+    <loc>https://corycrowley.me/tagged/mern/</loc>
+    <lastmod>2020-06-22</lastmod>
   </url>
   
   <url>
-    <loc>https://corycrowley.me/blogTags/javascript/</loc>
-    <lastmod>2020-06-21</lastmod>
+    <loc>https://corycrowley.me/tagged/javascript/</loc>
+    <lastmod>2020-06-22</lastmod>
   </url>
   
   <url>
-    <loc>https://corycrowley.me/blogTags/scss/</loc>
-    <lastmod>2020-06-21</lastmod>
+    <loc>https://corycrowley.me/tagged/scss/</loc>
+    <lastmod>2020-06-22</lastmod>
   </url>
   
   <url>
-    <loc>https://corycrowley.me/blogTags/reddit/</loc>
-    <lastmod>2020-06-21</lastmod>
+    <loc>https://corycrowley.me/tagged/reddit/</loc>
+    <lastmod>2020-06-22</lastmod>
   </url>
   
   <url>
-    <loc>https://corycrowley.me/blogTags/node/</loc>
-    <lastmod>2020-06-21</lastmod>
+    <loc>https://corycrowley.me/tagged/node/</loc>
+    <lastmod>2020-06-22</lastmod>
   </url>
   
   <url>
-    <loc>https://corycrowley.me/blogTags/projects/</loc>
-    <lastmod>2020-06-21</lastmod>
+    <loc>https://corycrowley.me/tagged/bot/</loc>
+    <lastmod>2020-06-22</lastmod>
   </url>
   
   <url>
-    <loc>https://corycrowley.me/blogTags/css/</loc>
-    <lastmod>2020-06-21</lastmod>
+    <loc>https://corycrowley.me/tagged/projects/</loc>
+    <lastmod>2020-06-22</lastmod>
   </url>
   
   <url>
-    <loc>https://corycrowley.me/blogTags/unity/</loc>
-    <lastmod>2020-06-21</lastmod>
+    <loc>https://corycrowley.me/tagged/unity/</loc>
+    <lastmod>2020-06-22</lastmod>
   </url>
   
   <url>
-    <loc>https://corycrowley.me/blogTags/hololens/</loc>
-    <lastmod>2020-06-21</lastmod>
+    <loc>https://corycrowley.me/tagged/hololens/</loc>
+    <lastmod>2020-06-22</lastmod>
   </url>
   
   <url>
-    <loc>https://corycrowley.me/blogTags/spotify/</loc>
-    <lastmod>2020-06-21</lastmod>
+    <loc>https://corycrowley.me/tagged/spotify/</loc>
+    <lastmod>2020-06-22</lastmod>
   </url>
   
   <url>
-    <loc>https://corycrowley.me/blogTags/hackathon/</loc>
-    <lastmod>2020-06-21</lastmod>
+    <loc>https://corycrowley.me/tagged/hackathon/</loc>
+    <lastmod>2020-06-22</lastmod>
   </url>
   
   <url>
-    <loc>https://corycrowley.me/blogTags/11ty/</loc>
-    <lastmod>2020-06-21</lastmod>
+    <loc>https://corycrowley.me/tagged/11ty/</loc>
+    <lastmod>2020-06-22</lastmod>
   </url>
   
   <url>
-    <loc>https://corycrowley.me/blogTags/nunjucks/</loc>
-    <lastmod>2020-06-21</lastmod>
+    <loc>https://corycrowley.me/tagged/nunjucks/</loc>
+    <lastmod>2020-06-22</lastmod>
   </url>
   
   <url>
-    <loc>https://corycrowley.me/blogTags/twilio/</loc>
-    <lastmod>2020-06-21</lastmod>
+    <loc>https://corycrowley.me/tagged/twilio/</loc>
+    <lastmod>2020-06-22</lastmod>
   </url>
   
   <url>
-    <loc>https://corycrowley.me/blogTags/interviews/</loc>
-    <lastmod>2020-06-21</lastmod>
+    <loc>https://corycrowley.me/tagged/interviews/</loc>
+    <lastmod>2020-06-22</lastmod>
   </url>
   
   <url>
-    <loc>https://corycrowley.me/blogTags/projectTagList/</loc>
-    <lastmod>2020-06-21</lastmod>
+    <loc>https://corycrowley.me/tagged/projectTagList/</loc>
+    <lastmod>2020-06-22</lastmod>
   </url>
   
   <url>
-    <loc>https://corycrowley.me/blogTags/bot/</loc>
-    <lastmod>2020-06-21</lastmod>
+    <loc>https://corycrowley.me/tagged/allTagsList/</loc>
+    <lastmod>2020-06-22</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://corycrowley.me/tagged/microsoft/</loc>
+    <lastmod>2020-06-22</lastmod>
   </url>
 </urlset>

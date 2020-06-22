@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
+
 	<title>Cory</title>
 	<subtitle>Cory Crowley&#39;s Posts</subtitle>
 	
@@ -18,7 +19,7 @@
 		<updated>2018-10-24T00:00:00-00:00</updated>
 		<id>https://corycrowley.me/posts/microsoft-interview/</id>
 		<content type="html">&lt;blockquote&gt;
-&lt;p&gt;&lt;em&gt;Holy hot damn salami. I had ten days before the biggest interview in my life.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Holy hot damn salami. I had ten days before the biggest interview in my life.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h3 id=&quot;how-i-ended-up-at-microsoft.&quot;&gt;How I ended up at Microsoft. &lt;a class=&quot;direct-link&quot; href=&quot;#how-i-ended-up-at-microsoft.&quot;&gt;#&lt;/a&gt;&lt;/h3&gt;
 &lt;p&gt;In my first year of University, I submitted my 30 font resume with 0 relevant experience to a Microsoft recruiter at a campus event.  This somehow turned into an on campus interview several weeks later.  I was under the impression that I was applying for the &lt;em&gt;Explorer Program&lt;/em&gt;, an internship tailored for new University students with little technical experience, but unbeknownst to me, I was applying for the full software engineering internship.&lt;/p&gt;
@@ -101,4 +102,6 @@ b // -2
 &lt;p&gt;&lt;strong&gt;Pics of the 725 Granville St. Office&lt;/strong&gt;&lt;/p&gt;
 </content>
 	</entry>
+
+
 </feed>
