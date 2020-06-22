@@ -11,8 +11,9 @@ tags:
   - interviews
   - microsoft
 layout: layouts/post.njk
+# eleventyExcludeFromCollections: true # <--draft
 ---
-> *Holy hot damn salami. I had ten days before the biggest interview in my life.*
+>Holy hot damn salami. I had ten days before the biggest interview in my life.
 
 ### How I ended up at Microsoft.
 In my first year of University, I submitted my 30 font resume with 0 relevant experience to a Microsoft recruiter at a campus event.  This somehow turned into an on campus interview several weeks later.  I was under the impression that I was applying for the *Explorer Program*, an internship tailored for new University students with little technical experience, but unbeknownst to me, I was applying for the full software engineering internship.  

@@ -23,6 +23,7 @@ eleventyNavigation:
   </div>
   
 </div>
+{%if collections.posts.length >= 1%}
 <div class="recentTitle">Recent Blogs</div>
 <div class="recentItems">
   {% set postslist = collections.posts | head(-3) %}
@@ -30,6 +31,7 @@ eleventyNavigation:
   {% include "postslist.njk" %}
   {# <p class="postCallout">More posts can be found in <a href="{{ '/posts/' | url }}">my blog</a>.</p> #}
 </div>
+{%endif%}
 <div class="recentTitle">Recent Projects</div>
 <div class="recentItems">
   {% set projectslist = collections.projects | head(-3) %}

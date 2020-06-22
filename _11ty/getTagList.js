@@ -8,7 +8,6 @@ module.exports = function(collection, tagTypes) {
     
     if( "tags" in item.data ) {
       let tags = item.data.tags;
-      console.log(tags);
 
       tags = tags.filter(function(item) {
         switch(item) {
