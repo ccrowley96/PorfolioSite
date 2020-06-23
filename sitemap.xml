@@ -52,6 +52,11 @@
   </url>
   
   <url>
+    <loc>https://corycrowley.me/posts/computer-engineering/</loc>
+    <lastmod>2020-06-21</lastmod>
+  </url>
+  
+  <url>
     <loc>https://corycrowley.me/about/</loc>
     <lastmod>2020-06-23</lastmod>
   </url>
@@ -147,16 +152,6 @@
   </url>
   
   <url>
-    <loc>https://corycrowley.me/tagged/spotify/</loc>
-    <lastmod>2020-06-23</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://corycrowley.me/tagged/hackathon/</loc>
-    <lastmod>2020-06-23</lastmod>
-  </url>
-  
-  <url>
     <loc>https://corycrowley.me/tagged/11ty/</loc>
     <lastmod>2020-06-23</lastmod>
   </url>
@@ -167,7 +162,22 @@
   </url>
   
   <url>
+    <loc>https://corycrowley.me/tagged/spotify/</loc>
+    <lastmod>2020-06-23</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://corycrowley.me/tagged/hackathon/</loc>
+    <lastmod>2020-06-23</lastmod>
+  </url>
+  
+  <url>
     <loc>https://corycrowley.me/tagged/twilio/</loc>
+    <lastmod>2020-06-23</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://corycrowley.me/tagged/engineering/</loc>
     <lastmod>2020-06-23</lastmod>
   </url>
   
