@@ -7,7 +7,7 @@ tags:
   - queens
   - engineering
 layout: layouts/post.njk
-eleventyExcludeFromCollections: true # <--draft
+# eleventyExcludeFromCollections: true # <--draft
 ---
 In June 2020, I graduated from Queen's University with a degree in Computer Engineering.  I wrote this in hopes that some current or future student will learn something from my experience.
 
@@ -109,7 +109,7 @@ I took 50 courses while studying at Queen's.  Of those, these courses were my fa
 
 ### What I took away from Undergraduate Computer Engineering
 - Classes aren't enough.  Find a technology that you're interested in and learn it on your own.
-- Work on your own projects - more important than classes in my opinion.
+- Work on your own projects, personal projects are more important than classes.
 - Go to hackathons. Go to hackathons. Go to hackathons.
 - Most of what you learn in Uni is useless; the earlier you realize that the better.
 - Take it slow.  There is no rush to finish school.
