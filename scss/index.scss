@@ -285,7 +285,14 @@ a[href].tag:visited {
       font-size: x-large;
   }
   .allTagItem{
-    background-color: black;
+    background-color: white;
+    color: black !important;
+    padding: 2px 6px;
+    &:hover{
+      background-color: black;
+      color: white !important;
+      transition: ease-in-out .2s;
+    }
   }
 }
 
