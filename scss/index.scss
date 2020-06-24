@@ -212,15 +212,12 @@ pre {
   display: inline-block;
   width: 100%;
   padding: 0px 10px 0px 5px;
-  // &:hover{
-  //   text-decoration: underline;
-  // }
 }
 .postlist-item-active .postlist-link {
   font-weight: bold;
 }
 .tmpl-home .postlist-link {
-  font-size: 1.1875em; /* 19px /16 */
+  font-size: 1.1em; 
   font-weight: 700;
   @media screen and(max-width: 768px) {
     font-size:.9em;
