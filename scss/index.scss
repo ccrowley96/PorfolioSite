@@ -16,7 +16,8 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: system-ui, sans-serif;
+  // font-family: system-ui, sans-serif;
+  font-family: 'Comfortaa', cursive;
   color: var(--darkgray);
   background-color: var(--white);
   max-width:800px;
@@ -158,6 +159,14 @@ pre {
   padding: 0;
 }
 .postlist-item {
+  background-color: darken(white, 10%);
+  border: 2px solid transparent;
+  cursor: pointer;
+  &:hover{
+    // background-color: darken(white, 20%);
+    border: 2px solid black;
+  }
+  
   overflow: hidden;
   .projectHeadingWrapper{
       display: inline-flex;
@@ -196,12 +205,16 @@ pre {
   }
 }
 .postlist-link {
+  text-decoration: none;
   overflow-wrap: break-word;
   word-wrap: break-word;
   hyphens: auto;
   display: inline-block;
   width: 100%;
   padding: 0px 10px 0px 5px;
+  // &:hover{
+  //   text-decoration: underline;
+  // }
 }
 .postlist-item-active .postlist-link {
   font-weight: bold;
@@ -219,34 +232,44 @@ pre {
 .tag {
   display: inline-block;
   vertical-align: text-top;
-  text-transform: uppercase;
-  font-size: 0.625em; /* 10px /16 */
+  // text-transform: uppercase;
+  font-size: 0.825em; /* 10px /16 */
   @media screen and(max-width: 768px) {
     font-size:0.3em;
   }
+  background-color: white;
   padding: 2px 4px;
   margin-right: 0.8em; /* 8px /10 */
-  background-color: var(--red);
   color: var(--white);
   border-radius: 0.25em; /* 3px /12 */
   text-decoration: none;
+  border: 1px solid black;
   &.projectTag{
-    background-color: $blue;
+    
   }
+  &:hover{
+    background-color: black;
+    transition: ease-in-out .2s;
+  }
+  
 }
 a[href].tag,
 a[href].tag:visited {
-  color: #fff;
+  color: black;
+  &:hover{
+    color:white;
+    transition: ease-in-out .2s;
+  }
 }
 
 .taggedSpan{
   display: inline-block;
-  vertical-align: text-top;
-  text-transform: uppercase;
-  padding: 2px 4px;
+  padding: 2px 8px;
   margin-right: 0.8em; /* 8px /10 */
   background-color: black;
   color: var(--white);
+  color: white;
+  border: 2px solid black;
   border-radius: 0.25em; /* 3px /12 */
   text-decoration: none;
 }
@@ -314,7 +337,6 @@ a[href].direct-link:focus:visited,
   margin-top:0px;
   
   .postlist-item{
-    // background-color: darken(white, 5%);
     border-radius:5px;
     margin-bottom:10px;
     margin-top:10px;
@@ -402,11 +424,22 @@ a[href].direct-link:focus:visited,
   }
 }
 
+.recentTitle{
+  font-size: 1.2em;
+}
+
 .postTagsWrapper{
   margin-top: 5px;
   margin-bottom: 15px;
   .tagHeader{
     display:inline;
+    margin-top:0px;
+    margin-bottom:0px;
+    padding-right: 10px;
+  }
+  span{
+    display: flex;
+    align-items: center;
   }
   a{
     margin-top: 3px;
