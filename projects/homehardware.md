@@ -8,7 +8,9 @@ images:
     - /img/homehardware/homehardware2.png
     - /img/homehardware/homehardware3.png
 tags: 
-    - mern
+    - mongo
+    - node
+    - react
     - javascript
     - scss
 ---

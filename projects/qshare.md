@@ -9,7 +9,9 @@ images:
     - /img/qshare/qshare2.png
     - /img/qshare/qshare3.png
 tags: 
-    - mern
+    - mongo
+    - node
+    - react
     - javascript
     - queens
 ---

@@ -9,7 +9,9 @@ images:
     - /img/groceryList/grocerylist2.png
     - /img/groceryList/grocerylist3.png
 tags: 
-    - mern
+    - mongo
+    - node
+    - react
     - javascript
     - scss
 ---

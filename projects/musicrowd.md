@@ -10,7 +10,9 @@ images:
     - /img/musicrowd/musicrowd3.jpeg
     - /img/musicrowd/musicrowd2.jpeg
 tags: 
-    - mern
+    - mongo
+    - node
+    - react
     - javascript
     - spotify
     - queens
