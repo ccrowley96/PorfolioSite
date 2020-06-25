@@ -7,7 +7,7 @@ github: https://github.com/ccrowley96/grocerylist
 images:
     - /img/groceryList/grocerylist1.png
     - /img/groceryList/grocerylist2.png
-    - /img/groceryList/grocerylist3.png
+    - /img/groceryList/grocerylist3.jpg
 tags: 
     - mongo
     - node
