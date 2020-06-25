@@ -21,7 +21,7 @@ tags:
 </div>
 
 ### Azure IOT TSI Internship
-During the summer of 2019, I interned at Microsoft Redmond on the Azure Internet of Things (IOT) Time Series Insights (TSI) team. My project was to build a scatter plot visualization capable of displaying large sets of time-series data sourced from IOT sensors.  The visualization aids in understanding trends and anomalies in time-series data. Once the scatter plot component was complete, I integrated it into the team's <a href="https://insights.timeseries.azure.com/preview/demo" target="_blank">Time Series Insights data explorer dashboard</a>, using React, Redux, SCSS, and TypeScript.
+During the summer of 2019, I interned at Microsoft Redmond on the Azure Internet of Things (IOT) Time Series Insights (TSI) team. My project was to build a scatter plot (shown above) visualization capable of displaying large sets of time-series data sourced from IOT sensors.  This visualization aids in understanding trends and anomalies in time-series data. Once the scatter plot was complete, I integrated it into the team's <a href="https://insights.timeseries.azure.com/preview/demo" target="_blank">Time Series Insights data explorer dashboard</a>, using React, Redux, SCSS, and TypeScript.
 
 Over the course of the 3 month internship, I learned how to use the <a href ="https://d3js.org/" target="_blank">D3.js</a> visualization library to create the SVG based web visualization you can see above.  I learned TypeScript, a JavaScript variant that allows strict syntactical typing.  I learned SCSS, a CSS extension language, making CSS styling easier and more consistent. I addition, I learned best React and Redux (a state management tool) practices from professional front-end engineers.
 
