@@ -1,5 +1,5 @@
 ---
-title: Microsoft Garage
+title: Microsoft Garage Internship
 subtitle: A Holographic Cancer Cell Visualizer
 date: 2018-08-20
 externalLink: https://mcec.microsoft.ca/blog/vancouver-interns-brings-holograms-to-bc-cancer/
