@@ -12,7 +12,7 @@
     </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tagged “microsoft”</title>
+    <title>Microsoft Azure Internship</title>
     <meta name="Description" content="This is my personal website :)">
     
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Balsamiq+Sans&family=Quicksand&family=Comfortaa:wght@300;400;500&display=swap" rel="stylesheet">
@@ -47,78 +47,147 @@
       </ul>
     </header>
 
-    <main class="tmpl-home">
-      <h2>Tagged <span class="taggedSpan">microsoft</span></h2>
+    <main class="tmpl-project">
+      <h1 class="postTitle">Microsoft Azure Internship</h1>
+<h3 class="postSubtitle">Azure Internet of Thing Time Series Insights Team, Redmond WA</h3>
+<span><h4 class="dateHeader">Date:</h4> 02 Aug 2019</span>
+
+    <div class="postTagsWrapper">
+    <span>
+        <h4 class="tagHeader">Tags:</h4>
+        
+            
+        
+            
+                <a href="/tagged/microsoft/" class="tag projectTag">microsoft</a>
+        
+            
+                <a href="/tagged/typescript/" class="tag projectTag">typescript</a>
+        
+            
+                <a href="/tagged/react/" class="tag projectTag">react</a>
+        
+            
+                <a href="/tagged/d3/" class="tag projectTag">d3</a>
+        
+        </span>
+    </div>
+
+<div class="projectLinkWrapper">
+    
+    
+</div>
+
+<div id="tsi-root" style="height: 400px;">
+</div>
+<div>
+    <label>Time Slider</label>
+    <select onchange='(function(){ toggleChartOption("isTemporal", (event.target.value === "true")) })(event)'>
+            <option value="true">true</option>
+            <option value="false" selected="">false</option>
+    </select>
+</div>
+<h3 id="azure-iot-tsi-internship">Azure IOT TSI Internship <a class="direct-link" href="#azure-iot-tsi-internship">#</a></h3>
+<p>During the summer of 2019, I interned at Microsoft Redmond on the Azure Internet of Things (IOT) Time Series Insights (TSI) team. My project was to build a scatter plot visualization capable of displaying large sets of time-series data sourced from IOT sensors.  The visualization aids in understanding trends and anomalies in time-series data. Once the scatter plot component was complete, I integrated it into the team's <a href="https://insights.timeseries.azure.com/preview/demo" target="_blank">Time Series Insights data explorer dashboard</a>, using React, Redux, SCSS, and TypeScript.</p>
+<p>Over the course of the 3 month internship, I learned how to use the <a href ="https://d3js.org/" target="_blank">D3.js</a> visualization library to create the SVG based web visualization you can see above.  I learned TypeScript, a JavaScript variant that allows strict syntactical typing.  I learned SCSS, a CSS extension language, making CSS styling easier and more consistent. I addition, I learned best React and Redux (a state management tool) practices from professional front-end engineers.</p>
+<p>The scatter plot shown above visualizes 3 axes of data: a horizontal x-axis, a vertical y-axis, and radial r-axis (the diameter of each dot). This example illustrates two factories, each with three sensors transmitting IOT data (randomly generated in this case). Each factory is assigned a color and each sensor within that factory is assigned a shade of the factory color. On the left side (top on mobile) of the scatter plot, is a legend which allows the user to toggle factory and sensor visibility as well as highlight a specific sensor's data.  The legend can also be resized, which will dynamically scale each axis and its respective labels.  Clicking on a sensor data point or on a sensor legend label will highlight that sensors data and lock the mouse hover interaction to target only data from that sensor.</p>
+<p>On the bottom left of the visualization, you'll see a toggle labeled <strong>Time Slider</strong>.  If toggled to <em>true</em>, the plot will visualize the data in chronological order, slicing up time, and visualizing only the sensor data for a given time slice. This allows the user to visualize specific times, locating timestamps using the slider at the bottom of the plot.</p>
+<p>When you hover a mouse over the visualization, a crosshair and tooltip locates the closest point and gives more detailed information about the 3 axis values and that point's timestamp. This was achieved using a mathematical <em>voronoi diagram</em>, which partitions a plane into regions, divided by closeness to each point on the plane. Voronoi diagrams are really cool.  The image below shows the Voronoi diagram for a scatter plot with visible partitions.</p>
+<p><strong>Scatter Plot Showing Voronoi Diagram</strong><br>
+<img src="/img/azure_iot_internship/voronoi_grid_visible.png" alt="Voronoi Diagram"></p>
+<script src="https://unpkg.com/tsiclient@1.3.19/tsiclient.js"></script>
+<link rel="stylesheet" type="text/css" href="https://unpkg.com/tsiclient@1.3.19/tsiclient.css"></link>
+<script>
+let data;
+let chartDataOptions;
+let scatterPlot;
+
+// Set chart options
+let chartOptions = {
+    theme: 'light',
+    yExtent: [0,1], 
+    legend: screen.width > 650 ? 'shown' : 'compact', 
+    offset: 'Local', 
+    tooltip: true, 
+    canDownload: false, 
+    hideChartControlPanel: false, 
+    is24HourTime: false, 
+    singleLineXAxisLabel: '',
+    xAxisHidden: false, 
+    yAxisHidden: false,
+    includeDots: false,
+    includeEnvelope: false,
+    interpolationFunction: 'curveMonotoneX',
+    yAxisState: 'stacked',
+    brushHandlesVisible: false,
+    snapBrush: false,
+    stacked: false, 
+    zeroYAxis: true,
+    arcWidthRatio: 1,
+    spMeasures: ['avg', 'min', 'max'],
+    isTemporal: false,
+    spAxisLabels: null
+}
+
+function toggleChartOption(property, value = null) {
+    //if value is null, assume a toggle
+    chartOptions[property] = (value === null) ? !chartOptions[property] : value; 
+    scatterPlot.render(data, chartOptions, chartDataOptions);
+}
+
+window.onload = function(){
+    // Create fake data
+    data = [];
+    let minute = 60*1000
+    let from = new Date(Math.floor(new Date(new Date().valueOf() / minute)) * minute);
+    let to;
+    for(let i = 0; i < 2; i++){
+        let lines = {};
+        data.push({[`Factory ${i}`]: lines});
+        for(let j = 0; j < 3; j++){
+            let values = {};
+            lines[`Sensor ${j}`] = values;
+            for(let k = 0; k < 10; k++){
+                // if(!(k%2 && k%3)){  // if check is to create some sparseness in the data
+                    to = new Date(from.valueOf() + 1000*60*k);
+                    let val = Math.random() / 2 + .25;
+                    let minVal = val - (Math.random() / 10);
+                    let maxVal = val + (Math.random() / 10);
+                    values[to.toISOString()] = {avg: val, min: minVal, max: maxVal};
+                // }
+            } 
+        }
+    }
+    
+    // render the data in a chart
+    let tsiClient = new TsiClient();
+    let searchSpan = {
+        from: from.toISOString(),
+        to: to.toISOString(),
+        bucketSize: '1d'
+    }
+    chartDataOptions = data.map(d => {
+        return {searchSpan: searchSpan};
+    });
+
+    scatterPlot = new tsiClient.ux.ScatterPlot(document.getElementById('tsi-root'))
+    scatterPlot.render(data, chartOptions, chartDataOptions);
+}
+</script>
 
 
-<ul reversed class="postlist" style="list-style-type:none;">
 
 
-  <li onClick="linkClick('/projects/iot_tsi_internship/')" class="postlist-item">
-    <div class="projectHeadingWrapper">
-      <div class="projectHeading">
-        <div class="projectHeadingNo">#3</div>
-          <div href="/projects/iot_tsi_internship/" class="postlist-link">Microsoft Azure Internship</div>
-      </div>
-    <div class="postlist-date" datetime="2019-08-02">02 Aug 2019</div>
-      
-        <div class="tagWrapper">
-          
-            <a href="/tagged/microsoft/" class="tag projectTag">microsoft</a>
-            <a href="/tagged/typescript/" class="tag projectTag">typescript</a>
-            <a href="/tagged/react/" class="tag projectTag">react</a>
-            <a href="/tagged/d3/" class="tag projectTag">d3</a>
-        <div>
-      
-  </li>
-  
 
-  <li onClick="linkClick('/posts/microsoft-interview/')" class="postlist-item">
-    <div class="projectHeadingWrapper">
-      <div class="projectHeading">
-        <div class="projectHeadingNo">#2</div>
-          <div href="/posts/microsoft-interview/" class="postlist-link">Interviewing @ Microsoft</div>
-      </div>
-    <div class="postlist-date" datetime="2018-10-24">24 Oct 2018</div>
-      
-        <div class="tagWrapper">
-          
-            <a href="/tagged/interviews/" class="tag ">interviews</a>
-            <a href="/tagged/microsoft/" class="tag ">microsoft</a>
-        <div>
-      
-  </li>
-  
+<p><a href="/projects">← Projects</a></p>
 
-  <li onClick="linkClick('/projects/microsoftgarage/')" class="postlist-item">
-    <div class="projectHeadingWrapper">
-      <div class="projectHeading">
-        <div class="projectHeadingNo">#1</div>
-          <div href="/projects/microsoftgarage/" class="postlist-link">Microsoft Garage Internship</div>
-      </div>
-    <div class="postlist-date" datetime="2018-08-20">20 Aug 2018</div>
-      
-        <div class="tagWrapper">
-          
-            <a href="/tagged/microsoft/" class="tag projectTag">microsoft</a>
-            <a href="/tagged/unity/" class="tag projectTag">unity</a>
-            <a href="/tagged/hololens/" class="tag projectTag">hololens</a>
-        <div>
-      
-  </li>
-  
-
-</ul>
-
-
-<p>See <a href="/allTags/">all tags</a>.</p>
 
 
     </main>
 
     <footer></footer>
 
-    <!-- Current page: /tagged/microsoft/ -->
+    <!-- Current page: /projects/iot_tsi_internship/ -->
     <script type="text/javascript">
     function linkClick(target){
       window.location = target;
