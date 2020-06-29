@@ -16,8 +16,9 @@
               <a href="{{ tagUrl | url }}" class="tag">{{ tag }}</a>
               {%- endif -%}
             {% endfor %}
-          <div>
+          </div>
         {%endif%}
+      <div class="projectSubtitle">{{post.data.subtitle}}</div>
     </li>
   {% set itemNo %}{{itemNo - 1}}{% endset %}
 {% endfor %}
