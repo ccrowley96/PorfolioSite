@@ -12,7 +12,7 @@
     </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
+    <title>My resume.</title>
     <meta name="Description" content="This is my personal website :)">
     
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Balsamiq+Sans&family=Quicksand&family=Comfortaa:wght@300;400;500&display=swap" rel="stylesheet">
@@ -41,83 +41,25 @@
       
       <ul class="nav">
         <li class="nav-item"><a href="/">Home</a></li>
-        <li class="nav-item nav-item-active"><a href="/posts/">Blog</a></li>
+        <li class="nav-item"><a href="/posts/">Blog</a></li>
         <li class="nav-item"><a href="/projects/">Projects</a></li>
         <li class="nav-item"><a href="/about/">About Me</a></li>
-        <li class="nav-item"><a href="/resume/">Resume</a></li>
+        <li class="nav-item nav-item-active"><a href="/resume/">Resume</a></li>
       </ul>
     </header>
 
-    <main class="tmpl-home">
-      
-<h2>Some thoughts.</h2>
+    <main class="tmpl-post">
+      <iframe id="resume_iframe" style="width: 768px; height: 100vh; left: 0px; right: 0px; margin: auto;" src="https://docs.google.com/document/d/e/2PACX-1vS1AtZkkBmtYvj9IP-1ufDdgs-uYimnRqyCsSV-o9VG826XdW0mDJ_2JunKD_0T2rvr6AVuV5Mz5k0O/pub?embedded=true">
+<base target="_blank">
+</iframe>
 
-
-<ul reversed class="postlist" style="list-style-type:none;">
-
-
-    <li onClick="linkClick('/posts/stackr/')" class="postlist-item">
-      <div class="projectHeadingWrapper">
-        <div class="projectHeading">
-          <div class="projectHeadingNo">#3</div>
-            <div class="postlist-link">Stackr: Arcade-Style Block Stacking Game</div>
-        </div>
-      <div class="postlist-date" datetime="2020-06-28">28 Jun 2020</div>
-        
-          <div class="tagWrapper">
-            
-              <a href="/tagged/unity/" class="tag">unity</a>
-              <a href="/tagged/game/" class="tag">game</a>
-          </div>
-        
-      <div class="projectSubtitle">Building a block-stacker with Unity Tilemaps</div>
-    </li>
-  
-
-    <li onClick="linkClick('/posts/computer-engineering/')" class="postlist-item">
-      <div class="projectHeadingWrapper">
-        <div class="projectHeading">
-          <div class="projectHeadingNo">#2</div>
-            <div class="postlist-link">Computer Engineering @ Queen&#39;s University</div>
-        </div>
-      <div class="postlist-date" datetime="2020-06-21">21 Jun 2020</div>
-        
-          <div class="tagWrapper">
-            
-              <a href="/tagged/queens/" class="tag">queens</a>
-              <a href="/tagged/engineering/" class="tag">engineering</a>
-          </div>
-        
-      <div class="projectSubtitle">My experience studying Computer Engineering</div>
-    </li>
-  
-
-    <li onClick="linkClick('/posts/microsoft-interview/')" class="postlist-item">
-      <div class="projectHeadingWrapper">
-        <div class="projectHeading">
-          <div class="projectHeadingNo">#1</div>
-            <div class="postlist-link">Interviewing @ Microsoft</div>
-        </div>
-      <div class="postlist-date" datetime="2018-10-24">24 Oct 2018</div>
-        
-          <div class="tagWrapper">
-            
-              <a href="/tagged/interviews/" class="tag">interviews</a>
-              <a href="/tagged/microsoft/" class="tag">microsoft</a>
-          </div>
-        
-      <div class="projectSubtitle">My experience interviewing at Microsoft</div>
-    </li>
-  
-
-</ul>
-
+<p><a href="/">← Home</a></p>
 
     </main>
 
     <footer></footer>
 
-    <!-- Current page: /posts/ -->
+    <!-- Current page: /resume/ -->
     <script type="text/javascript">
     function linkClick(target){
       window.location = target;
