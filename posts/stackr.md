@@ -14,7 +14,7 @@ I've been wanting to build an arcade-style block stacking game for a while.  I'v
 What better time than covid quarantine?  This post is about building Stackr, a 2D block stacking game using Unity tilemaps.
 
 ### Tilemaps
-I recently discovered Unity <a href = "https://docs.unity3d.com/Manual/class-Tilemap.html" target="_blank">tilemaps</a>.  They're great for grid based 2D games.  They allow you to paint sprites onto a 2D grid, layer them, and in my case, move them. I've found they are a great starting point for 2D games and level in Unity.
+I recently discovered Unity <a href = "https://docs.unity3d.com/Manual/class-Tilemap.html" target="_blank">tilemaps</a>.  They're great for grid based 2D games.  They allow you to paint sprites onto a 2D grid, layer them, and in my case, move them. I've found they are a great starting point for 2D games and levels in Unity.
 
 ### Creating the Level
 The image below shows the starting Unity scene for Stackr. The scene is represented as a grid.  On the grid are three tilemaps: the walls, the player, and the ground.  Each of these tilemaps lets you easily paint new sprites into the scene, each constrained to the grid system shown.
@@ -22,7 +22,7 @@ The image below shows the starting Unity scene for Stackr. The scene is represen
 ![Level](/img/stackr/level.png)
 
 ### Moving the Player
->In programming, you can't always use a 'best practice'. Make something that works and learn from your mistakes.
+>When programming, you can't always use a 'best practice'. Make something that works and learn from your mistakes.
 
 I chose to represent the player as a tilemap to easily add and remove player blocks using the tile painting system. I then achieved player movement by moving the player's tilemap transform. 
 
@@ -46,7 +46,7 @@ void Update(){
 Each moveTimeout seconds, this moves the player 1 unit to the right.
 
 ### Collision Detection
-Now, I need the player blocks to change direction when they reach the end of the grassy ground blocks. First, I need to add a rigidBody2D component to the player and a boxCollider2D component to both the player and the walls. Now, setting the wall box collider to trigger will notify the player when the player collides with a wall.
+Now, I need the player blocks to change direction when they reach the end of the grassy ground blocks. First, I need to add a rigidBody2D component to the player and a boxCollider2D component to both the player and the walls. Now, setting the wall box collider to trigger will notify the player when it collides with a wall.
 
 In the `BoxController.cs`, I'll add this code:
 
