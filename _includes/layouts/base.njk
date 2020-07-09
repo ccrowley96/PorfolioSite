@@ -14,6 +14,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ renderData.title or title or metadata.title }}</title>
     <meta name="Description" content="{{ renderData.description or description or metadata.description }}">
+
+    <meta property="og:url" content="https://corycrowley.me" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Cory Crowley" />
+    <meta property="og:image" content="{{'/img/site_image.png' | url}}"/>
+    <meta property="og:description" content="Cory Crowley" />
     {# Google Fonts #}
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Balsamiq+Sans&family=Quicksand&family=Comfortaa:wght@300;400;500&display=swap" rel="stylesheet">
     {# PRISM #}
