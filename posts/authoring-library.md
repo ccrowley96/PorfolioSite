@@ -6,6 +6,7 @@ images:
 tags:
   - typescript
   - rollup
+  - microsoft
 layout: layouts/post.njk
 # eleventyExcludeFromCollections: true # <--draft
 ---
