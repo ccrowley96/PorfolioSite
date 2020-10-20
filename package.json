@@ -8,8 +8,8 @@
     "serve": "eleventy --serve",
     "debug": "DEBUG=* eleventy",
     "sass:process": "sass scss/index.scss:_includes/css/global.css scss/prism-base16-monokai.dark.scss:_includes/css/monokai.css --style=compressed",
-    "icon:process": "cp img/icons/* _includes/icons",
-    "prestart": "rm -rf _site/ && npm run icon:process",
+    "icon:process": "shx cp img/icons/* _includes/icons",
+    "prestart": "shx rm -rf _site/ && npm run icon:process",
     "start": "concurrently \"npm run sass:process -- --watch\" \"eleventy --serve\""
   },
   "repository": {
@@ -37,5 +37,8 @@
     "concurrently": "^5.2.0",
     "moment": "^2.26.0",
     "sass": "^1.26.8"
+  },
+  "dependencies": {
+    "shx": "^0.3.2"
   }
 }
