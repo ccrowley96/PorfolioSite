@@ -8,7 +8,7 @@ tags:
   - rollup
   - microsoft
 layout: layouts/post.njk
-# eleventyExcludeFromCollections: true # <--draft
+eleventyExcludeFromCollections: true # <--draft
 ---
 
 ## TsiClient
