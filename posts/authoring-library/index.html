@@ -12,7 +12,7 @@
     </script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cory</title>
+    <title>npm run pls-build</title>
     <meta name="Description" content="This is my personal website :)">
 
     <meta property="og:url" content="https://corycrowley.me" />
@@ -54,102 +54,177 @@
       </ul>
     </header>
 
-    <main class="tmpl-home">
-      <table>
-  <thead>
-    <th>URL</th>
-    <th>Page Title</th>
-  </thead>
-  <tbody>
-  <tr>
-    <td><a href="/projects/qshare/"><code>/projects/qshare/</code></a></td>
-    <td>QShare</td>
-  </tr>
-  <tr>
-    <td><a href="/projects/goldenwords/"><code>/projects/goldenwords/</code></a></td>
-    <td>Golden Words</td>
-  </tr>
-  <tr>
-    <td><a href="/projects/microsoftgarage/"><code>/projects/microsoftgarage/</code></a></td>
-    <td>Microsoft Garage Internship</td>
-  </tr>
-  <tr>
-    <td><a href="/posts/microsoft-interview/"><code>/posts/microsoft-interview/</code></a></td>
-    <td>Interviewing @ Microsoft</td>
-  </tr>
-  <tr>
-    <td><a href="/projects/musicrowd/"><code>/projects/musicrowd/</code></a></td>
-    <td>MusiCrowd</td>
-  </tr>
-  <tr>
-    <td><a href="/projects/textnet/"><code>/projects/textnet/</code></a></td>
-    <td>TextNet</td>
-  </tr>
-  <tr>
-    <td><a href="/projects/iot_tsi_internship/"><code>/projects/iot_tsi_internship/</code></a></td>
-    <td>Microsoft Azure Internship</td>
-  </tr>
-  <tr>
-    <td><a href="/projects/maftBot/"><code>/projects/maftBot/</code></a></td>
-    <td>Discord Meme Bot</td>
-  </tr>
-  <tr>
-    <td><a href="/projects/grocerylist/"><code>/projects/grocerylist/</code></a></td>
-    <td>GroceryList</td>
-  </tr>
-  <tr>
-    <td><a href="/projects/homehardware/"><code>/projects/homehardware/</code></a></td>
-    <td>HomeHardware Deliveries</td>
-  </tr>
-  <tr>
-    <td><a href="/projects/porfoliosite/"><code>/projects/porfoliosite/</code></a></td>
-    <td>Portfolio Site</td>
-  </tr>
-  <tr>
-    <td><a href="/posts/computer-engineering/"><code>/posts/computer-engineering/</code></a></td>
-    <td>Computer Engineering @ Queen&#39;s University</td>
-  </tr>
-  <tr>
-    <td><a href="/posts/stackr/"><code>/posts/stackr/</code></a></td>
-    <td>Stackr: Arcade-Style Block Stacking Game</td>
-  </tr>
-  <tr>
-    <td><a href="/projects/sticky-notes/"><code>/projects/sticky-notes/</code></a></td>
-    <td>Sticky Notes</td>
-  </tr>
-  <tr>
-    <td><a href="/posts/authoring-library/"><code>/posts/authoring-library/</code></a></td>
-    <td>npm run pls-build</td>
-  </tr>
-  <tr>
-    <td><a href="/about/"><code>/about/</code></a></td>
-    <td>Something about me.</td>
-  </tr>
-  <tr>
-    <td><a href="/posts/"><code>/posts/</code></a></td>
-    <td>Blog</td>
-  </tr>
-  <tr>
-    <td><a href="/"><code>/</code></a></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td><a href="/projects/"><code>/projects/</code></a></td>
-    <td>Projects</td>
-  </tr>
-  <tr>
-    <td><a href="/resume/"><code>/resume/</code></a></td>
-    <td>My resume.</td>
-  </tr>
-  </tbody>
-</table>
+    <main class="tmpl-post">
+      <h1 class="postTitle">npm run pls-build</h1>
+<h3 class="postSubtitle">Authoring a TypeScript library with Rollup.js</h3>
+<span><h4 class="dateHeader">Date:</h4> 19 Oct 2020</span>
 
+    <div class="postTagsWrapper">
+    <span>
+        <h4 class="tagHeader">Tags:</h4>
+        
+            
+        
+            
+                <a href="/tagged/typescript/" class="tag">typescript</a>
+        
+            
+                <a href="/tagged/rollup/" class="tag">rollup</a>
+        
+        </span>
+    </div>
+
+
+<h2 id="tsiclient">TsiClient <a class="direct-link" href="#tsiclient">#</a></h2>
+<p>After starting at Microsoft, one of my first projects was to update the build system for our team's front-end library, <a href="https://github.com/microsoft/tsiclient">TsiClient</a>, a library for creating complex visualizations like the scatter plot below, easily.  If your interested in the tech behind this scatter plot, I wrote another post about that <a href="/projects/iot_tsi_internship/">here</a></p>
+<div id="tsi-root" style="height: 400px;">
+</div>
+<div>
+    <label>Time Slider</label>
+    <select onchange='(function(){ toggleChartOption("isTemporal", (event.target.value === "true")) })(event)'>
+            <option value="true">true</option>
+            <option value="false" selected="">false</option>
+    </select>
+</div>
+<p>This plot is created using these three lines of code<br>
+<img src="/img/authoring-library/umd_script.png" alt="Scatter plot"></p>
+<p>Where data is an array of json time-series data, and chartOptions / chartDataOptions are objects specifying how you want the chart to look.</p>
+<h2 id="what-we-started-with">What we started with <a class="direct-link" href="#what-we-started-with">#</a></h2>
+<p>The scatter plot above is inserted into this page using a bundling technique know as <a href="https://github.com/umdjs/umd">Universal Module Definition (UMD)</a>, which bundles the libary code into a single TsiClient.js file.  That file can then be included via script tag into this page.  Sounds great right?</p>
+<p>The problem is the size.  Including all of <strong>TsiClient.js</strong> via UMD bundle creates a 2.2MB dependency for this page.  That's huge for just trying to create a scatter plot.  The red box on the image below shows that the external dependencies for this library are bloating the size.  That huuuuuge white square on the left shows the proportional size of an azure maps dependency that isn't even being used by the scatter plot.  Hmm, ok, so there's room for improvement.</p>
+<p><img src="/img/authoring-library/original-size.png" alt="Original Size"></p>
+<p>So, I did what any new front-end dev does when they have no idea what they're doing... I hit the blogs.</p>
+<p><img src="/img/authoring-library/tldr.png" alt=".d.ts typings"></p>
+<p>I read about code splitting (separating code into multiple bundles), webpack and rollup (bundling technologies), type declarations (bundling typing files with the library), and tree shaking.  Tree shaking is a buzzword in the world of bundling.  Imagine a tree that represents your code.  The healthy branches are the code that you actually need, while the dead branches are the code that isn't being used (like the maps dependency).  When you shake the tree, the dead branches (unused code) should fall out, leaving only the live branches (code being used).</p>
+<p><img src="/img/authoring-library/bloggin.png" alt="Just bloggin"></p>
+<p>So I tried to implement some of the techniques I read about, but nothing was working.  Specifically, this syntax of tree shaking wasn't working.</p>
+<pre class="language-js"><code class="language-js"><span class="token keyword">import</span> <span class="token punctuation">{</span>Scatterplot<span class="token punctuation">,</span> LineChart<span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'tsiclient'</span><span class="token punctuation">;</span></code></pre>
+<p>I had created an index file which exported references to each component in our library.  The blogs had promised that webpack would be smart enough to tree shake the library using the syntax above if the consumer only wanted to import certain components, opposed to the entire library.  Long story short, this wasn't working.  It would still bring in all of the unwanted dependencies, or, more frequenty, not work using this es-module (esm) syntax at all. Ok, so the magic of tree shaking wasn't working.  What else could I try?</p>
+<p>I switched over to Rollup.js - a bundling technology more suited to libraries.  I learned that there was an alternative to tree shaking called direct component imports.  That syntax looks like this.</p>
+<pre class="language-js"><code class="language-js"><span class="token keyword">import</span> Linechart <span class="token keyword">from</span> <span class="token string">'tsiclient/LineChart'</span><span class="token punctuation">;</span><br><span class="token keyword">import</span> Scatterplot <span class="token keyword">from</span> <span class="token string">'tsiclient/Scaterplot'</span><span class="token punctuation">;</span></code></pre>
+<p>Rather than relying on tree shaking to trace what code is actually touched, why not just bundle each component into it's own chunk, and only include that code if explicitly imported?  So that's exactly what I built.</p>
+<h2 id="a-simple-example">A simple example <a class="direct-link" href="#a-simple-example">#</a></h2>
+<p>Here's an example of how this works.  In the image below, the left side represents a UMD build, while the right represents a multiple entry point build.  To make things simple, this diagram illustrates a simple library for converting string cases.</p>
+<p><img src="/img/authoring-library/umd_vs_direct.png" alt="Multiple entry points"></p>
+<h3 id="umd">UMD <a class="direct-link" href="#umd">#</a></h3>
+<p>On the left, you can see all of the components bundled into a single file with one entry point, <code>main.js</code>.  This technique is often useful if you need to include the library via script tag, or as a fallback for front-end / back-end apps which want to bring in the entire library.</p>
+<h3 id="esm---direct-component-imports">ESM - direct component imports <a class="direct-link" href="#esm---direct-component-imports">#</a></h3>
+<p>On the right, you can see that the output is split into multiple entry points.</p>
+<ul>
+<li><code>main.js</code> which has references to the entire library,</li>
+<li><code>upperFirst.js</code> which converts the first character of a string to uppercase and has a dependency on the <code>upper.js</code> chunk</li>
+<li><code>lower.js</code> which exposes an entry point for lower casing functionality</li>
+<li><code>upper.js</code> which exposes the upper casing functionality.</li>
+</ul>
+<p>The pink chunk shown at the bottom contains shared dependencies between multiple output chunks. It is also separated into its own chunk to eliminate any code duplication.</p>
+<p>So how does this work in practice?  Well, if I only need the code which converts strings to lowercase, I'll import the <code>lower.js</code> entry point.  Something like this:</p>
+<pre class="language-js"><code class="language-js"><span class="token keyword">import</span> lower <span class="token keyword">from</span> <span class="token string">'casing/lower.js'</span></code></pre>
+<p>That will bring in the blue chunk and the pink chunk shown in the diagram above.  The entry file <code>lower.js</code> has references to the files that it needs: <code>lowerChar.js</code> and <code>constants.js</code>, and <code>lowerChar.js</code> has a reference to <code>shiftChar.js</code> so that is also imported.</p>
+<p>So rather than importing the entire library, we just cut down this import to 4 files, only including what we actually use.</p>
+<h2 id="type-declarations">Type declarations <a class="direct-link" href="#type-declarations">#</a></h2>
+<p>Last, but not least, I want to mention budling type declaration files.</p>
+<p>When authoring a TypeScript library, it's important to include <code>.d.ts</code> typing files with your bundles.  This will ensure that anyone using your library knows what parameters each function takes, how to properly construct your classes, and which types to pass around. Normally, when converting TypeScript code into JavaScript, the <code>.d.ts</code> typing files will be nested into a directory structure which matches the source code (shown on left in image below).  This doesn't work well when emitting bundles.</p>
+<p>For the typings to be propery included into an application which consumes your library, the typing files must be in the same location, and with the same name as the bundled <code>.js</code> files (shown on right in image below).  This ensures that any bundle you import will bring the associated typing file with it.  Luckily, there's an amazing <a href="https://github.com/wessberg/rollup-plugin-ts">Rollup plugin</a> which does this for you.  Whew.</p>
+<p><img src="/img/authoring-library/typing.png" alt=".d.ts typings"></p>
+<h2 id="sugar-on-top">Sugar on top <a class="direct-link" href="#sugar-on-top">#</a></h2>
+<p>Converting to an optimized, direct component import pattern significantly reduces the dependency size of including the TsiClient library in an application.  Here are some of the results.</p>
+<p><img src="/img/authoring-library/size_reduction.png" alt="optimization results"></p>
+<p>In the image above, on the left is the UMD, monolothic bundle approach, tested in a create-react-app, importing the LineChart.</p>
+<p>On the right, is the es-module direct component import approach, tested in a create-react-app, importing the LineChart.</p>
+<p>That's a 68% reduction in size!</p>
+<p>Here is a visualization of the optimized output bundles, where each colored square represents a different component of the library that can be directly imported.</p>
+<p><img src="/img/authoring-library/esm_viz.png" alt="esm visualization"></p>
+<script src="https://unpkg.com/tsiclient@1.3.19/tsiclient.js"></script>
+<link rel="stylesheet" type="text/css" href="https://unpkg.com/tsiclient@1.3.19/tsiclient.css"></link>
+<script>
+let data;
+let chartDataOptions;
+let scatterPlot;
+
+// Set chart options
+let chartOptions = {
+    theme: 'light',
+    yExtent: [0,1], 
+    legend: screen.width > 650 ? 'shown' : 'compact', 
+    offset: 'Local', 
+    tooltip: true, 
+    canDownload: false, 
+    hideChartControlPanel: false, 
+    is24HourTime: false, 
+    singleLineXAxisLabel: '',
+    xAxisHidden: false, 
+    yAxisHidden: false,
+    includeDots: false,
+    includeEnvelope: false,
+    interpolationFunction: 'curveMonotoneX',
+    yAxisState: 'stacked',
+    brushHandlesVisible: false,
+    snapBrush: false,
+    stacked: false, 
+    zeroYAxis: true,
+    arcWidthRatio: 1,
+    spMeasures: ['avg', 'min', 'max'],
+    isTemporal: false,
+    spAxisLabels: null
+}
+
+function toggleChartOption(property, value = null) {
+    //if value is null, assume a toggle
+    chartOptions[property] = (value === null) ? !chartOptions[property] : value; 
+    scatterPlot.render(data, chartOptions, chartDataOptions);
+}
+
+window.onload = function(){
+    // Create fake data
+    data = [];
+    let minute = 60*1000
+    let from = new Date(Math.floor(new Date(new Date().valueOf() / minute)) * minute);
+    let to;
+    for(let i = 0; i < 2; i++){
+        let lines = {};
+        data.push({[`Factory ${i}`]: lines});
+        for(let j = 0; j < 3; j++){
+            let values = {};
+            lines[`Sensor ${j}`] = values;
+            for(let k = 0; k < 10; k++){
+                // if(!(k%2 && k%3)){  // if check is to create some sparseness in the data
+                    to = new Date(from.valueOf() + 1000*60*k);
+                    let val = Math.random() / 2 + .25;
+                    let minVal = val - (Math.random() / 10);
+                    let maxVal = val + (Math.random() / 10);
+                    values[to.toISOString()] = {avg: val, min: minVal, max: maxVal};
+                // }
+            } 
+        }
+    }
+    
+    
+    let searchSpan = {
+        from: from.toISOString(),
+        to: to.toISOString(),
+        bucketSize: '1d'
+    }
+    chartDataOptions = data.map(d => {
+        return {searchSpan: searchSpan};
+    });
+
+    let tsiClient = new TsiClient(); // Create TsiClient
+    scatterPlot = new tsiClient.ux.ScatterPlot(document.getElementById('tsi-root'))
+    scatterPlot.render(data, chartOptions, chartDataOptions); // Render Scatter
+}
+</script>
+
+
+
+
+
+<p><a href="/posts">← Blog</a></p>
 
     </main>
 
     <footer></footer>
 
-    <!-- Current page: /page-list/ -->
+    <!-- Current page: /posts/authoring-library/ -->
     <script type="text/javascript">
     function linkClick(target){
       window.location = target;
