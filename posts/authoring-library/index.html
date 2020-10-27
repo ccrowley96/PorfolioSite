@@ -125,14 +125,14 @@
 <p>That will bring in the blue chunk and the pink chunk shown in the diagram above.  The entry file <code>lower.js</code> has references to the files that it needs: <code>lowerChar.js</code> and <code>constants.js</code>, and <code>lowerChar.js</code> has a reference to <code>shiftChar.js</code> so that is also imported.</p>
 <p>So rather than importing the entire library, we just cut down this import to 4 files, only including what we actually use.</p>
 <h2 id="type-declarations">Type declarations <a class="direct-link" href="#type-declarations">#</a></h2>
-<p>Last, but not least, I want to mention budling type declaration files.</p>
+<p>Last, but not least, I want to mention bundling type declaration files.</p>
 <p>When authoring a TypeScript library, it's important to include <code>.d.ts</code> typing files with your bundles.  This will ensure that anyone using your library knows what parameters each function takes, how to properly construct your classes, and which types to pass around. Normally, when converting TypeScript code into JavaScript, the <code>.d.ts</code> typing files will be nested into a directory structure which matches the source code (shown on left in image below).  This doesn't work well when emitting bundles.</p>
-<p>For the typings to be propery included into an application which consumes your library, the typing files must be in the same location, and with the same name as the bundled <code>.js</code> files (shown on right in image below).  This ensures that any bundle you import will bring the associated typing file with it.  Luckily, there's an amazing <a href="https://github.com/wessberg/rollup-plugin-ts">Rollup plugin</a> which does this for you.  Whew.</p>
+<p>For the typings to be properly included into an application which consumes your library, the typing files must be in the same location, and with the same name as the bundled <code>.js</code> files (shown on right in image below).  This ensures that any bundle you import will bring the associated typing file with it.  Luckily, there's an amazing <a href="https://github.com/wessberg/rollup-plugin-ts">Rollup plugin</a> which does this for you.  Whew.</p>
 <p><img src="/img/authoring-library/typing.png" alt=".d.ts typings"></p>
 <h2 id="sugar-on-top">Sugar on top <a class="direct-link" href="#sugar-on-top">#</a></h2>
 <p>Converting to an optimized, direct component import pattern significantly reduces the dependency size of including the TsiClient library in an application.  Here are some of the results.</p>
 <p><img src="/img/authoring-library/size_reduction.png" alt="optimization results"></p>
-<p>In the image above, on the left is the UMD, monolothic bundle approach, tested in a create-react-app, importing the LineChart.</p>
+<p>In the image above, on the left is the UMD, monolithic bundle approach, tested in a create-react-app, importing the LineChart.</p>
 <p>On the right, is the es-module direct component import approach, tested in a create-react-app, importing the LineChart.</p>
 <p>That's a 68% reduction in size!</p>
 <p>Here is a visualization of the optimized output bundles, where each colored square represents a different component of the library that can be directly imported.</p>
