@@ -94,11 +94,11 @@ That will bring in the blue chunk and the pink chunk shown in the diagram above.
 So rather than importing the entire library, we just cut down this import to 4 files, only including what we actually use.
 
 ## Type declarations
-Last, but not least, I want to mention budling type declaration files.
+Last, but not least, I want to mention bundling type declaration files.
 
 When authoring a TypeScript library, it's important to include `.d.ts` typing files with your bundles.  This will ensure that anyone using your library knows what parameters each function takes, how to properly construct your classes, and which types to pass around. Normally, when converting TypeScript code into JavaScript, the `.d.ts` typing files will be nested into a directory structure which matches the source code (shown on left in image below).  This doesn't work well when emitting bundles.  
 
-For the typings to be propery included into an application which consumes your library, the typing files must be in the same location, and with the same name as the bundled `.js` files (shown on right in image below).  This ensures that any bundle you import will bring the associated typing file with it.  Luckily, there's an amazing [Rollup plugin](https://github.com/wessberg/rollup-plugin-ts) which does this for you.  Whew.
+For the typings to be properly included into an application which consumes your library, the typing files must be in the same location, and with the same name as the bundled `.js` files (shown on right in image below).  This ensures that any bundle you import will bring the associated typing file with it.  Luckily, there's an amazing [Rollup plugin](https://github.com/wessberg/rollup-plugin-ts) which does this for you.  Whew.
 
 ![.d.ts typings](/img/authoring-library/typing.png)
 
@@ -108,7 +108,7 @@ Converting to an optimized, direct component import pattern significantly reduce
 
 ![optimization results](/img/authoring-library/size_reduction.png)
 
-In the image above, on the left is the UMD, monolothic bundle approach, tested in a create-react-app, importing the LineChart.
+In the image above, on the left is the UMD, monolithic bundle approach, tested in a create-react-app, importing the LineChart.
 
 On the right, is the es-module direct component import approach, tested in a create-react-app, importing the LineChart.
 
