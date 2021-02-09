@@ -44,11 +44,17 @@
     <header>
       {# <h1 class="home"><a href="{{ '/' | url }}">{{ metadata.title }}</a></h1> #}
       {#- Read more about `eleventy-navigation` at https://www.11ty.dev/docs/plugins/navigation/ #}
-      <ul class="nav">
-      {%- for entry in collections.all | eleventyNavigation %}
-        <li class="nav-item{% if entry.url == page.url %} nav-item-active{% endif %}"><a href="{{ entry.url | url }}">{{ entry.title }}</a></li>
-      {%- endfor %}
-      </ul>
+      <div class="collapsable-menu">
+        <input type="checkbox" id="menu">
+        <label for="menu" class="menu-icon"><div class="open-icon mobile-menu-icon">{% include "icons/menu.svg"%}</div><div class="close-icon mobile-menu-icon">{% include "icons/close.svg"%}</div></label>
+        <div class="menu-content">
+          <ul class="nav">
+          {%- for entry in collections.all | eleventyNavigation %}
+            <li class="nav-item{% if entry.url == page.url %} nav-item-active{% endif %}"><a href="{{ entry.url | url }}">{{ entry.title }}</a></li>
+          {%- endfor %}
+          </ul>
+        </div>
+      </div>
     </header>
 
     <main{% if templateClass %} class="{{ templateClass }}"{% endif %}>
