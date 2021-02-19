@@ -7,7 +7,6 @@ templateClass: tmpl-post
 <span><h4 class="dateHeader">Date:</h4> {{date | readableDate}}</span>
 {%if tags.length > 0%}
     <div class="postTagsWrapper">
-    <span>
         <h4 class="tagHeader">Tags:</h4>
         {% for tag in tags %}
             {%if tag != "posts"%}
@@ -17,7 +16,6 @@ templateClass: tmpl-post
                 {%- endif -%}
             {% endif%}
         {% endfor %}
-        </span>
     </div>
 {%endif%}
 
