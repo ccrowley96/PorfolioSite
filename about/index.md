@@ -26,5 +26,3 @@ I have dual US / Canadian citizenship and recently graduated from Queen's Univer
 
 Right now, I'm interested in listening to & making music, reading, playing video games, and programming.
 
-Starting July 2020, I'll be working as a codermanz @ Microsoft.
-
