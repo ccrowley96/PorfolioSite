@@ -35,11 +35,6 @@ p:last-child {
   margin-bottom: 0;
 }
 p,
-.tmpl-post li,
-img {
-  // max-width: 37.5em; /* 600px /16 */
-}
-p,
 .tmpl-post li {
   line-height: 1.45;
 }
@@ -152,7 +147,7 @@ pre {
   input#menu {
     display: none;
   }
-  @media screen and (max-width: 450px) {
+  @media screen and (max-width: 550px) {
     .nav {
       margin-top: 0px;
     }
@@ -217,7 +212,7 @@ pre {
 .nav-item {
   display: inline-block;
   margin-right: 1em;
-  @media screen and (max-width: 450px) {
+  @media screen and (max-width: 550px) {
     display: block;
   }
 }
@@ -256,7 +251,7 @@ pre {
       display: flex;
       align-items: center;
       .projectHeadingNo {
-        @media screen and(max-width: 768px) {
+        @media screen and (max-width: 768px) {
           font-size: 0.9em;
         }
       }
@@ -266,7 +261,7 @@ pre {
   .projectSubtitle {
     margin-top: -2px;
     font-style: italic;
-    @media screen and(max-width: 768px) {
+    @media screen and (max-width: 768px) {
       font-size: 0.9em;
     }
   }
@@ -276,7 +271,7 @@ pre {
   word-spacing: -0.5px;
   padding-right: 10px;
   font-size: 0.9em;
-  @media screen and(max-width: 768px) {
+  @media screen and (max-width: 768px) {
     font-size: 0.8em;
   }
 }
@@ -295,7 +290,7 @@ pre {
 .tmpl-home .postlist-link {
   font-size: 1.1em;
   font-weight: 700;
-  @media screen and(max-width: 768px) {
+  @media screen and (max-width: 768px) {
     font-size: 0.9em;
   }
 }
@@ -306,7 +301,7 @@ pre {
   vertical-align: text-top;
   // text-transform: uppercase;
   font-size: 0.825em; /* 10px /16 */
-  @media screen and(max-width: 768px) {
+  @media screen and (max-width: 768px) {
     font-size: 0.3em;
   }
   background-color: white;
@@ -316,8 +311,7 @@ pre {
   border-radius: 0.25em; /* 3px /12 */
   text-decoration: none;
   border: 1px solid black;
-  &.projectTag {
-  }
+ 
   &:hover {
     background-color: black;
     transition: ease-in-out 0.2s;
@@ -457,10 +451,10 @@ a[href].direct-link:focus:visited,
     font-family: "Indie Flower", cursive;
     text-align: center;
     font-size: 80px;
-    @media screen and(max-width: 768px) {
+    @media screen and (max-width: 768px) {
       font-size: 12vw;
     }
-    @media screen and(max-width: 425px) {
+    @media screen and (max-width: 425px) {
       height: 75px;
     }
   }
