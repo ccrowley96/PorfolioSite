@@ -2,7 +2,7 @@
 title: MoonRoom
 subtitle: Private community spaces.
 date: 2021-02-19
-externalLink: https://www.moonroom.app/
+externalLink: https://moonroom.herokuapp.com/
 github: https://github.com/ccrowley96/moonroom
 tags:
   - mongo

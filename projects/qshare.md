@@ -2,7 +2,6 @@
 title: QShare
 subtitle: A university ridesharing connector.
 date: 2018-03-27
-externalLink: https://qshare.ca
 github: https://github.com/QueensRideshare/Qshare
 images:
     - /img/qshare/qshare1.png

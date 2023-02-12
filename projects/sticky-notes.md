@@ -2,7 +2,6 @@
 title: Sticky Notes
 subtitle: A (super basic) Google Keep clone I built with my brother Tim
 date: 2020-07-18
-externalLink: https://my-sticky-notes.herokuapp.com/
 github: https://github.com/ccrowley96/notes
 tags: 
     - mongo

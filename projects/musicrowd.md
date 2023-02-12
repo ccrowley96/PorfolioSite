@@ -2,7 +2,6 @@
 title: MusiCrowd
 subtitle: The crowdsourced DJ.
 date: 2019-02-05
-externalLink: http://musicrowd.ca
 github: https://github.com/ccrowley96/MusiCrowd
 images:
     - /img/musicrowd/musicrowd1.png
