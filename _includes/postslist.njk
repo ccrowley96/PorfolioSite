@@ -1,7 +1,8 @@
 <ul reversed class="postlist" style="list-style-type:none;">
 {% set itemNo %}{{(postslistCounter or postslist.length)}}{% endset %}
 {% for post in postslist | reverse %}
-    <li onClick="linkClick('{{ post.url | url }}')" class="postlist-item{% if post.url == url %} postlist-item-active{% endif %}">
+    <li onClick="linkClick('{{ post.url | url }}')">
+      <div class="postlist-item{% if post.url == url %} postlist-item-active{% endif %}">
       <div class="projectHeadingWrapper">
         <div class="projectHeading">
           <div class="projectHeadingNo">#{{itemNo}}</div>
@@ -18,6 +19,7 @@
             {% endfor %}
           </div>
         {%endif%}
+      </div>
       <div class="projectSubtitle">{{post.data.subtitle}}</div>
     </li>
   {% set itemNo %}{{itemNo - 1}}{% endset %}

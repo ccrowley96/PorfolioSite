@@ -40,7 +40,7 @@ eleventyNavigation:
 {%endif%}
 <div class="recentTitle">Recent Projects</div>
 <div class="recentItems">
-  {% set projectslist = collections.projects | head(-3) %}
+  {% set projectslist = collections.projects | head(-5) %}
   {% set projectslistCounter = collections.projects | length %}
   {% include "projectslist.njk" %}
   {# <p class="postCallout">More projects can be found in <a href="{{ '/projects/' | url }}">my projects</a>.</p> #}

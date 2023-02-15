@@ -259,6 +259,7 @@ pre {
   }
   counter-increment: start-from -1;
   .projectSubtitle {
+    display: block;
     margin-top: -2px;
     font-style: italic;
     @media screen and (max-width: 768px) {

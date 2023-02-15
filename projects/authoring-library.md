@@ -1,14 +1,13 @@
 ---
 title: npm run pls-build
 subtitle: Authoring a TypeScript library with Rollup.js
+github: https://github.com/microsoft/tsiclient
 date: 2020-10-19
 images:
 tags:
   - typescript
   - rollup
   - microsoft
-layout: layouts/post.njk
-# eleventyExcludeFromCollections: true # <--draft
 ---
 
 ## TsiClient

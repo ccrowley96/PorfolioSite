@@ -7,7 +7,7 @@ tags:
   - queens
   - engineering
 layout: layouts/post.njk
-# eleventyExcludeFromCollections: true # <--draft
+eleventyExcludeFromCollections: true # <--draft
 ---
 In June 2020, I graduated from Queen's University with a degree in Computer Engineering.  I wrote this in hopes that some current or future student will learn something from my experience.
 

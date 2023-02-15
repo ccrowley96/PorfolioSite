@@ -1,13 +1,12 @@
 ---
 title: "Stackr: Arcade-Style Block Stacking Game"
 subtitle: Building a block-stacker with Unity Tilemaps
+github: https://github.com/ccrowley96/Stackr
 date: 2020-06-28
 images:
 tags:
   - unity
   - game
-layout: layouts/post.njk
-# eleventyExcludeFromCollections: true # <--draft
 ---
 I've been wanting to build an arcade-style block stacking game for a while.  I've built multiple block stacking games in the past, first in pure Java, then in Unity 3D, but the previous games never had that arcade feel.
 

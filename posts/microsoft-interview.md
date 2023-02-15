@@ -11,7 +11,7 @@ tags:
   - interviews
   - microsoft
 layout: layouts/post.njk
-# eleventyExcludeFromCollections: true # <--draft
+eleventyExcludeFromCollections: true # <--draft
 ---
 >Holy hot damn salami. I had ten days before the biggest interview in my life.
 
